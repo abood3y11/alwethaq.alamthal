@@ -1,5 +1,5 @@
 /**
- * ركاز — استقبال طلبات عرض السعر في Google Sheets
+ * مؤسسة الوثاق الأمثل التجارية — استقبال طلبات "اطلب فريقك" في Google Sheets
  *
  * طريقة التركيب (مرة واحدة):
  * 1) أنشئ ملف Google Sheets جديد.
@@ -7,7 +7,7 @@
  * 3) اضغط Deploy ← New deployment ← النوع: Web app.
  *      - Execute as: Me
  *      - Who has access: Anyone
- * 4) انسخ رابط الـ Web app (ينتهي بـ /exec) وضعه في rekaz.html
+ * 4) انسخ رابط الـ Web app (ينتهي بـ /exec) وضعه في index.html
  *    داخل المتغيّر SHEETS_ENDPOINT.
  */
 
@@ -21,7 +21,7 @@ function doPost(e) {
     var sheet = ss.getSheetByName(SHEET_NAME);
     if (!sheet) {
       sheet = ss.insertSheet(SHEET_NAME);
-      sheet.appendRow(['التاريخ', 'الاسم', 'الشركة', 'الجوال', 'البريد الإلكتروني', 'الخدمة المطلوبة', 'عدد الشاحنات', 'موقع المشروع ومدته']);
+      sheet.appendRow(['التاريخ', 'الاسم', 'الشركة', 'الجوال', 'البريد الإلكتروني', 'الخدمة المطلوبة', 'عدد العمال', 'تفاصيل المشروع']);
       sheet.setRightToLeft(true);
       sheet.getRange(1, 1, 1, 8).setFontWeight('bold').setBackground('#0D4F45').setFontColor('#FFFFFF');
     }
@@ -33,8 +33,8 @@ function doPost(e) {
       p.phone || '',
       p.email || '',
       p.service || '',
-      p.trucks || '',
-      p.location || ''
+      p.workers || '',
+      p.project_details || ''
     ]);
     return ContentService.createTextOutput(JSON.stringify({ ok: true }))
       .setMimeType(ContentService.MimeType.JSON);

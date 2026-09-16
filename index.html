@@ -3,15 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0D4F45">
-<link rel="icon" type="image/x-icon" href="assets/rekaz.ico">
-<title>ركاز للإمداد والخدمات اللوجستية | تأجير شاحنات قلابة وتشغيل أساطيل</title>
-<meta name="description" content="ركاز للإمداد والخدمات اللوجستية — تأجير شاحنات قلابة سعة 24 م³ بالشهر، نقل الرمال ومواد الردم، وتشغيل أساطيل لمشاريع أرامكو والمشاريع الصناعية في المملكة.">
+<meta name="theme-color" content="#111514">
+
+<!-- ====== SEO ======================================================
+     ضع نطاق موقعك بدل REPLACE-WITH-YOUR-DOMAIN.com هنا وفي robots.txt
+     و sitemap.xml. إن بقي العنوان النموذجي، يصحّحه السكربت تلقائياً
+     من عنوان الصفحة الحقيقي عند النشر.
+     ================================================================= -->
+<title>توريد وتشغيل عمالة ونظافة | مؤسسة الوثاق الأمثل التجارية</title>
+<meta name="description" content="مؤسسة الوثاق الأمثل التجارية لتوريد وتشغيل القوى العاملة في السعودية: عمال نظافة ومستودعات وتحميل وتنزيل ومشرفو مواقع، بعقود مرنة وورديات حسب احتياج مشروعك.">
+<meta name="keywords" content="توريد عمالة, تشغيل عمال نظافة, شركة نظافة, عمال مستودعات, تحميل وتنزيل, مشرف موقع, قوى عاملة, عقود تشغيل, السعودية, الوثاق الأمثل">
+<meta name="author" content="مؤسسة الوثاق الأمثل التجارية">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="geo.region" content="SA">
+<meta name="geo.placename" content="Saudi Arabia">
+<link rel="canonical" id="canonical" href="https://REPLACE-WITH-YOUR-DOMAIN.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="مؤسسة الوثاق الأمثل التجارية">
+<meta property="og:locale" content="ar_SA">
+<meta property="og:title" content="توريد وتشغيل عمالة ونظافة | مؤسسة الوثاق الأمثل التجارية">
+<meta property="og:description" content="عمال نظافة، مستودعات، تحميل وتنزيل، كوادر مساندة ومشرفو مواقع — بعقود مرنة وورديات حسب احتياج مشروعك.">
+<meta property="og:url" id="ogurl" content="https://REPLACE-WITH-YOUR-DOMAIN.com/">
+<meta property="og:image" id="ogimg" content="https://REPLACE-WITH-YOUR-DOMAIN.com/assets/brand/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="مؤسسة الوثاق الأمثل التجارية — توريد وتشغيل القوى العاملة">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="توريد وتشغيل عمالة ونظافة | مؤسسة الوثاق الأمثل">
+<meta name="twitter:description" content="عمال نظافة، مستودعات، تحميل وتنزيل، كوادر مساندة ومشرفو مواقع — بعقود مرنة وورديات حسب احتياج مشروعك.">
+<meta name="twitter:image" id="twimg" content="https://REPLACE-WITH-YOUR-DOMAIN.com/assets/brand/og-cover.png">
+
+<link rel="icon" href="assets/brand/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/brand/favicon-256.png">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/workers/cleaner-team.png" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&family=Changa:wght@600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
+/* ============================================================
+   الوثاق الأمثل — dark-dominant editorial layout
+   palette carried over unchanged; everything structural is new
+   ============================================================ */
 :root{
+  /* palette — unchanged */
   --basalt:#111514;
   --steel:#16332E;
   --steel-2:#1F4A42;
@@ -21,459 +58,902 @@
   --sand:#BFE6DA;
   --concrete:#F4F7F5;
   --line:#D9E2DE;
+  /* shades of the same hues, for layering on a dark canvas */
+  --void:#0A0D0C;
+  --coal:#171B1A;
+  --fg:#EAF3F0;
+  --fg-dim:#8FA49E;
+  --hair:rgba(255,255,255,.10);
+  --hair-2:rgba(255,255,255,.055);
   --ink:#151514;
   --ink-soft:#5C6B66;
-  --white:#fff;
-  --r:14px;
-  --shadow-sm:0 4px 6px rgba(17,21,20,.10), 0 2px 4px rgba(17,21,20,.06);
-  --shadow-md:0 10px 15px rgba(17,21,20,.10), 0 4px 6px rgba(17,21,20,.05);
-  --shadow-lg:0 24px 48px rgba(17,21,20,.18);
-  --grad-dark:linear-gradient(150deg,#101413 0%,#123B34 55%,#17594C 100%);
-  --grad-teal:linear-gradient(135deg,#4CC0A4 0%,#1E9B85 48%,#0D4F45 100%);
-  --grad-sand:linear-gradient(135deg,#F2FAF7 0%,#DBEEE7 100%);
+
+  --rail:0px;
+  --bar:72px;
+  --pad:clamp(20px,5vw,72px);
+  --maxw:1320px;
+
+  --f-display:"Changa",system-ui,sans-serif;
+  --f-body:"Almarai",system-ui,"Segoe UI",sans-serif;
+  --f-lat:"Space Grotesk",ui-monospace,monospace;
 }
+@media (min-width:1180px){:root{--rail:92px;--bar:84px}}
+
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;background:var(--void)}
 body{
-  margin:0;background:var(--concrete);color:var(--ink);
-  font-family:"IBM Plex Sans Arabic",system-ui,"Segoe UI",sans-serif;
-  font-size:16px;line-height:1.85;-webkit-font-smoothing:antialiased;
+  margin:0;background:var(--basalt);color:var(--fg);
+  font-family:var(--f-body);font-size:16px;line-height:1.9;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;overflow-x:clip;
 }
-h1,h2,h3,h4{font-family:"Readex Pro",system-ui,sans-serif;line-height:1.3;margin:0;font-weight:600;letter-spacing:-.01em}
-p{margin:0 0 1rem}
+h1,h2,h3,h4{font-family:var(--f-display);margin:0;font-weight:700;line-height:1.22;letter-spacing:0}
+p{margin:0}
 a{color:inherit;text-decoration:none}
-img{max-width:100%}
-.wrap{width:min(1180px,92vw);margin-inline:auto}
-.num{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums}
-:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:6px}
-.skip-link{position:absolute;top:-56px;inset-inline-start:1rem;z-index:100;background:var(--teal-deep);color:#fff;padding:.6rem 1.2rem;border-radius:0 0 10px 10px;font-weight:600;transition:top .2s}
-.skip-link:focus{top:0}
+img{max-width:100%;display:block}
+ol,ul{margin:0;padding:0;list-style:none}
+.lat{font-family:var(--f-lat);font-variant-numeric:tabular-nums;letter-spacing:.02em}
+:focus-visible{outline:2px solid var(--mint);outline-offset:4px;border-radius:4px}
+.skip{position:fixed;top:-60px;inset-inline-start:16px;z-index:200;background:var(--teal);color:#06231D;padding:.7rem 1.2rem;border-radius:0 0 12px 12px;font-weight:700;transition:top .2s}
+.skip:focus{top:0}
+.shell{width:min(var(--maxw),100% - var(--pad)*2);margin-inline:auto}
+[id]{scroll-margin-top:calc(var(--bar) + 24px)}
 
-/* hazard stripe — signature motif */
-.hazard{height:8px;background:repeating-linear-gradient(115deg,var(--teal) 0 22px,var(--basalt) 22px 44px)}
-.hazard--thin{height:4px;opacity:.9}
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:.6rem;border:0;cursor:pointer;
+  font-family:var(--f-display);font-weight:700;font-size:.95rem;line-height:1;
+  padding:1.05rem 1.7rem;border-radius:999px;white-space:nowrap;transition:transform .3s cubic-bezier(.2,.8,.2,1),background .3s,color .3s,border-color .3s}
+.btn:hover{transform:translateY(-3px)}
+.btn-primary{background:var(--teal);color:#04211B}
+.btn-primary:hover{background:var(--mint)}
+.btn-line{background:transparent;color:var(--fg);border:1px solid var(--hair)}
+.btn-line:hover{border-color:var(--teal);color:var(--mint)}
+.btn-ink{background:var(--basalt);color:#fff}
+.btn .arw{font-family:var(--f-lat);font-size:1.05em;transform:translateY(-1px)}
 
-/* ---------- top utility ---------- */
-.util{background:var(--basalt);color:#A3B5AF;font-size:.8rem;padding:.5rem 0}
-.util .wrap{display:flex;gap:1.25rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
-.util a:hover{color:var(--teal)}
-.util-group{display:flex;gap:1.25rem;flex-wrap:wrap}
+/* small caps label */
+.tag{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--f-body);font-weight:700;
+  font-size:.78rem;letter-spacing:.06em;color:var(--mint)}
+.tag::before{content:"";width:26px;height:1px;background:var(--teal)}
+.tag--ink{color:var(--teal-deep)}
+.tag--ink::before{background:var(--teal-deep)}
 
-/* ---------- nav ---------- */
-header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);box-shadow:var(--shadow-sm)}
-.nav .wrap{display:flex;align-items:center;gap:1.5rem;height:76px}
+/* ---------- fixed side rail (desktop) ---------- */
+.rail{position:fixed;inset-block:0;inset-inline-start:0;width:var(--rail);z-index:90;
+  display:none;flex-direction:column;align-items:center;justify-content:space-between;
+  padding:22px 0 26px;border-inline-end:1px solid var(--hair-2);background:rgba(10,13,12,.72);backdrop-filter:blur(14px)}
+@media (min-width:1180px){.rail{display:flex}}
+.rail-mark{width:40px;height:40px;display:block}
+.rail-nav{display:flex;flex-direction:column;gap:26px;align-items:center}
+.rail-dot{position:relative;width:9px;height:9px;box-sizing:content-box;border:11px solid transparent;background-clip:padding-box;margin:-11px;border-radius:50%;background:rgba(255,255,255,.2);transition:background .3s,box-shadow .3s,transform .3s}
+.rail-dot:hover{transform:scale(1.35)}
+.rail-dot.on{background:var(--teal);box-shadow:0 0 0 5px rgba(30,155,133,.16)}
+.rail-dot::after{content:attr(data-label);position:absolute;inset-inline-start:calc(100% + 14px);top:50%;translate:0 -50%;
+  background:var(--steel);color:var(--fg);font-size:.78rem;font-family:var(--f-body);padding:.28rem .7rem;border-radius:7px;
+  white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .25s,translate .25s}
+.rail-dot:hover::after{opacity:1;translate:0 -50%}
+.rail-cr{writing-mode:vertical-rl;font-family:var(--f-lat);font-size:.75rem;letter-spacing:.22em;color:rgba(255,255,255,.3)}
+
+/* ---------- top bar ---------- */
+.topbar{position:fixed;top:0;inset-inline:var(--rail) 0;z-index:80;height:var(--bar);
+  display:flex;align-items:center;gap:1rem;padding-inline:var(--pad);
+  transition:background .4s,backdrop-filter .4s,border-color .4s;border-bottom:1px solid transparent}
+.topbar.solid{background:rgba(10,13,12,.82);backdrop-filter:blur(14px);border-bottom-color:var(--hair-2)}
 .brand{display:flex;align-items:center;gap:.7rem;margin-inline-end:auto}
-.mark{width:42px;height:42px;border-radius:10px;background:var(--grad-dark);display:grid;place-items:center;box-shadow:var(--shadow-sm);position:relative;overflow:hidden;flex:none}
-.mark::after{content:"";position:absolute;inset-inline-start:0;top:0;bottom:0;width:6px;background:var(--grad-teal)}
-.mark span{font-family:"Readex Pro";color:#fff;font-size:1.05rem;font-weight:700;padding-inline-start:6px}
-.logo-img{height:44px;width:auto;display:block}
-footer .logo-img{background:#fff;border-radius:10px;padding:.35rem .7rem;height:48px}
-@media (max-width:520px){.logo-img{height:34px}}
-.brand b{display:block;font-family:"Readex Pro";font-size:1.02rem;font-weight:600;line-height:1.25}
-.brand small{display:block;color:var(--ink-soft);font-size:.72rem;letter-spacing:.06em;font-family:"IBM Plex Mono"}
-.menu{display:flex;gap:1.6rem;font-size:.95rem;font-weight:500}
-.menu a{padding:.35rem 0;border-bottom:2px solid transparent;transition:.25s}
-.menu a:hover{color:var(--teal-deep);border-color:var(--teal)}
-.btn{display:inline-flex;align-items:center;gap:.5rem;border:0;cursor:pointer;font-family:"Readex Pro";font-weight:600;font-size:.95rem;padding:.8rem 1.4rem;border-radius:10px;transition:transform .25s, box-shadow .25s, background .25s}
-.btn-primary{background:var(--grad-teal);color:#06231D;box-shadow:0 6px 14px rgba(13,79,69,.32)}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 22px rgba(13,79,69,.4)}
-.btn-ghost{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,.35)}
-.btn-ghost:hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}
-.btn-dark{background:var(--grad-dark);color:#fff;box-shadow:var(--shadow-md)}
-.btn-dark:hover{transform:translateY(-2px)}
-.nav-toggle{display:none;background:none;border:1px solid var(--line);border-radius:10px;padding:.55rem .7rem;cursor:pointer}
+.brand svg{width:38px;height:38px;flex:none}
+.brand .bn{display:flex;flex-direction:column;line-height:1.15}
+.brand .bn b{font-family:var(--f-display);font-weight:700;font-size:1.02rem;letter-spacing:-.01em}
+.brand .bn span{font-family:var(--f-lat);font-size:.58rem;letter-spacing:.2em;color:var(--fg-dim);white-space:nowrap}
+@media (min-width:1180px){.brand svg{display:none}}
+.topbar .btn{padding:.85rem 1.4rem;font-size:.88rem}
+.burger{display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--hair);border-radius:50%;background:none;color:var(--fg);cursor:pointer}
+.burger span{display:block;width:17px;height:1.5px;background:currentColor;position:relative;transition:.3s}
+.burger span::before,.burger span::after{content:"";position:absolute;inset-inline:0;height:1.5px;background:currentColor;transition:.3s}
+.burger span::before{top:-5px}.burger span::after{top:5px}
+.burger[aria-expanded="true"] span{background:transparent}
+.burger[aria-expanded="true"] span::before{top:0;transform:rotate(45deg)}
+.burger[aria-expanded="true"] span::after{top:0;transform:rotate(-45deg)}
+@media (min-width:1180px){.burger{display:none}}
 
-/* ---------- hero ---------- */
-.hero{background:var(--grad-dark);color:#fff;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;inset-block:0;inset-inline-end:-10%;width:60%;
-  background:radial-gradient(circle at 60% 40%, rgba(30,155,133,.22), transparent 62%);pointer-events:none}
-.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:3.5rem;align-items:center;padding:5rem 0 5.5rem;position:relative}
-.eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-family:"IBM Plex Mono";font-size:.76rem;letter-spacing:.14em;color:var(--teal);border:1px solid rgba(30,155,133,.35);background:rgba(30,155,133,.08);padding:.4rem .85rem;border-radius:999px;margin-bottom:1.5rem}
-.hero h1{font-size:clamp(2rem,4.4vw,3.35rem);font-weight:700;letter-spacing:-.02em}
+/* mobile sheet */
+.sheet{position:fixed;inset:0;z-index:79;background:var(--void);padding:calc(var(--bar) + 30px) var(--pad) var(--pad);
+  display:flex;flex-direction:column;justify-content:center;gap:.2rem;
+  clip-path:inset(0 0 100% 0);transition:clip-path .55s cubic-bezier(.76,0,.24,1);visibility:hidden}
+.sheet.open{clip-path:inset(0 0 0 0);visibility:visible}
+.sheet a{font-family:var(--f-display);font-weight:700;font-size:clamp(1.8rem,9vw,3rem);padding:.35rem 0;
+  border-bottom:1px solid var(--hair-2);display:flex;align-items:baseline;gap:.9rem}
+.sheet a i{font-family:var(--f-lat);font-style:normal;font-size:.78rem;color:var(--teal);letter-spacing:.1em}
+.sheet .sheet-foot{margin-top:2rem;display:flex;flex-direction:column;gap:.35rem;font-size:.9rem;color:var(--fg-dim)}
+.sheet .sheet-foot a{font-size:1rem;font-family:var(--f-body);font-weight:400;border:0;padding:.35rem 0;color:var(--fg)}
+
+/* ---------- layout scaffolding ---------- */
+main,footer{padding-inline-start:var(--rail)}
+.sec{position:relative;padding:clamp(72px,11vh,140px) 0}
+.sec--light{background:var(--concrete);color:var(--ink)}
+.sec--light p{color:var(--ink-soft)}
+.eyeline{display:flex;align-items:baseline;justify-content:space-between;gap:2rem;flex-wrap:wrap;
+  padding-bottom:1.5rem;margin-bottom:clamp(2.5rem,6vw,4.5rem);border-bottom:1px solid var(--hair)}
+.sec--light .eyeline{border-color:var(--line)}
+.eyeline h2{font-size:clamp(1.9rem,4.6vw,3.4rem);max-width:18ch;letter-spacing:-.01em}
+.eyeline .side{max-width:38ch;color:var(--fg-dim);font-size:.98rem}
+.sec--light .eyeline .side{color:var(--ink-soft)}
+
+/* ---------- depth layers ---------- */
+.layer{position:absolute;inset:0;pointer-events:none}
+.depth-4{pointer-events:auto}
+.blob{position:absolute;border-radius:50%;filter:blur(0px)}
+.b1{width:min(70vw,720px);aspect-ratio:1;inset-inline-end:-14%;top:-22%;
+  background:radial-gradient(closest-side,rgba(30,155,133,.26),rgba(30,155,133,0) 70%)}
+.b2{width:min(58vw,600px);aspect-ratio:1;inset-inline-start:-12%;bottom:-18%;
+  background:radial-gradient(closest-side,rgba(76,192,164,.16),rgba(76,192,164,0) 70%)}
+.grain{position:absolute;inset:0;opacity:.5;pointer-events:none;
+  background:radial-gradient(120% 90% at 50% 40%,transparent 52%,rgba(10,13,12,.8) 100%)}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;
+  background:linear-gradient(190deg,var(--coal) 0%,var(--basalt) 42%,var(--void) 100%)}
+.hero-grid{position:relative;z-index:4;width:100%;padding:calc(var(--bar) + 4vh) 0 0}
+.hero-copy{max-width:min(600px,50vw);padding-bottom:clamp(1.5rem,4vh,3rem)}
+@media (max-width:900px){.hero-copy{max-width:none}}
+.hero h1{font-size:clamp(2.2rem,5.6vw,4.3rem);font-weight:800;letter-spacing:-.025em;line-height:1.12;margin:1.4rem 0 0}
+.hero h1 .ln{display:block;overflow:hidden}
+.hero h1 .ln>span{display:block}
 .hero h1 em{font-style:normal;color:var(--teal)}
-.hero p.lead{color:#C4D6D0;font-size:1.08rem;margin:1.35rem 0 2rem;max-width:46ch}
-.hero-cta{display:flex;gap:.9rem;flex-wrap:wrap}
+.hero .lead{margin:1.4rem 0 1.9rem;max-width:none;color:var(--fg-dim);font-size:clamp(1rem,1.5vw,1.12rem)}
+.hero-cta{display:flex;gap:.8rem;flex-wrap:wrap}
+.facts{display:flex;gap:clamp(1rem,2.4vw,2.2rem);flex-wrap:wrap;margin-top:clamp(1.6rem,4vh,2.6rem);
+  padding-top:1.2rem;border-top:1px solid var(--hair)}
+.fact b{display:block;font-family:var(--f-display);font-weight:700;font-size:1.02rem}
+.fact span{display:block;font-family:var(--f-lat);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--fg-dim);margin-bottom:.35rem}
+.hero-art{position:absolute;z-index:3;inset-inline-end:-5%;bottom:0;width:min(58vw,880px);height:auto;
+  filter:drop-shadow(0 40px 60px rgba(0,0,0,.55))}
+.ghost{position:absolute;z-index:2;inset-inline-end:var(--pad);top:28%;pointer-events:none;user-select:none}
+.ghost span{display:block;font-family:var(--f-display);font-weight:800;font-size:clamp(3.2rem,10vw,8.4rem);line-height:.94;
+  letter-spacing:-.04em;color:transparent;-webkit-text-stroke:1px rgba(76,192,164,.11)}
+.scroll-cue{position:absolute;z-index:5;inset-inline-end:var(--pad);bottom:26px;display:flex;align-items:center;gap:.7rem;
+  font-family:var(--f-lat);font-size:.66rem;letter-spacing:.24em;color:var(--fg-dim)}
+.scroll-cue i{display:block;width:1px;height:42px;background:linear-gradient(var(--teal),transparent);animation:cue 2s ease-in-out infinite}
+@keyframes cue{50%{transform:scaleY(.45);transform-origin:top}}
+@media (max-width:900px) and (orientation:portrait),(max-width:640px){
+  .hero{min-height:auto;flex-direction:column;align-items:stretch}
+  .hero-grid{order:1;padding:calc(var(--bar) + 3vh) 0 0}
+  .hero-copy{max-width:none;padding-bottom:0}
+  .hero-art{order:2;position:relative;inset:auto;align-self:center;
+    width:min(116vw,580px);margin:1.6rem auto -1px;filter:drop-shadow(0 22px 34px rgba(0,0,0,.5))}
+  .ghost,.scroll-cue{display:none}
+}
+@media (max-width:560px){
+  .topbar .btn{padding:.7rem 1rem;font-size:.82rem}
+  .brand .bn span{font-size:.5rem;letter-spacing:.14em}
+  .brand .bn b{font-size:.94rem}
+}
 
-/* spec plate — signature element */
-.plate{background:linear-gradient(160deg,rgba(255,255,255,.09),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.16);border-radius:18px;padding:1.6rem;box-shadow:var(--shadow-lg);backdrop-filter:blur(6px)}
-.plate-head{display:flex;justify-content:space-between;align-items:center;padding-bottom:.9rem;border-bottom:1px dashed rgba(255,255,255,.22);margin-bottom:.4rem}
-.plate-head span{font-family:"IBM Plex Mono";font-size:.72rem;letter-spacing:.12em;color:#97A8A2}
-.plate-head b{font-family:"Readex Pro";font-size:.9rem;color:var(--teal)}
-.spec{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.08)}
-.spec:last-child{border-bottom:0}
-.spec dt{color:#AEBEB8;font-size:.9rem}
-.spec dd{margin:0;font-family:"IBM Plex Mono";font-size:1.3rem;font-weight:600;color:#fff}
-.spec dd small{font-size:.72rem;color:#93A69F;margin-inline-start:.25rem}
+/* ---------- marquee ---------- */
+.marq{background:var(--void);border-block:1px solid var(--hair-2);overflow:hidden;padding:1.05rem 0}
+.marq-track{display:flex;width:max-content;animation:marq 34s linear infinite}
+.marq-track span{display:flex;align-items:center;gap:clamp(1.6rem,4vw,3.2rem);padding-inline:clamp(.8rem,2vw,1.6rem);
+  font-family:var(--f-display);font-weight:600;font-size:clamp(.95rem,1.8vw,1.35rem);color:var(--fg-dim);white-space:nowrap}
+.marq-track b{color:var(--teal);font-weight:700}
+.marq-track i{font-style:normal;color:var(--teal-deep)}
+@keyframes marq{from{transform:translateX(-50%)}to{transform:translateX(0)}}
 
-/* ---------- coverage strip ---------- */
-.strip{background:var(--basalt);color:#91A19B;padding:1.1rem 0;font-size:.9rem}
-.strip .wrap{display:flex;gap:2rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
-.strip b{color:#E8F1EE;font-family:"Readex Pro";font-weight:500}
-.chips{display:flex;gap:.5rem;flex-wrap:wrap}
-.chip{border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:.3rem .8rem;font-size:.82rem}
+/* ---------- manifesto ---------- */
+.mani{position:relative;overflow:hidden}
+.mani-grid{display:grid;grid-template-columns:auto 1fr;gap:clamp(1.5rem,5vw,4rem);align-items:start}
+.mani-side{position:sticky;top:calc(var(--bar) + 30px)}
+.mani-txt{font-family:var(--f-display);font-weight:600;font-size:clamp(1.35rem,3.4vw,2.6rem);line-height:1.55;letter-spacing:-.01em}
+.mani-txt .wd{color:rgba(21,21,20,.17);transition:color .18s linear}
+.mani-txt .wd.lit{color:var(--ink)}
+.mani-txt .wd.key.lit{color:var(--teal-deep)}
+.mani-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:clamp(2.5rem,6vw,4rem);
+  padding-top:1.6rem;border-top:1px solid var(--line)}
+.mani-meta b{display:block;font-family:var(--f-display);font-size:clamp(1.5rem,3vw,2.1rem);color:var(--ink);line-height:1.2}
+.mani-meta span{font-size:.88rem;color:var(--ink-soft)}
+.mani-shot{margin-top:clamp(2.5rem,7vw,4.5rem);position:relative}
+.mani-shot::before{content:"";position:absolute;inset:auto 0 0;height:62%;border-radius:26px 26px 0 0;
+  background:linear-gradient(180deg,rgba(191,230,218,.55),rgba(244,247,245,0))}
+.mani-shot img{position:relative;width:min(100%,980px);margin-inline:auto;height:auto}
+@media (max-width:820px){
+  .mani-grid{grid-template-columns:1fr}
+  .mani-side{position:static}
+  .mani-meta{grid-template-columns:1fr;gap:1.1rem}
+}
 
-/* ---------- sections ---------- */
-section{padding:5rem 0}
-.sec-head{max-width:58ch;margin-bottom:2.75rem}
-.kicker{font-family:"IBM Plex Mono";font-size:.75rem;letter-spacing:.16em;color:var(--teal-deep);display:block;margin-bottom:.75rem}
-.sec-head h2{font-size:clamp(1.6rem,3vw,2.3rem)}
-.sec-head p{color:var(--ink-soft);margin-top:.9rem}
+/* ---------- services · horizontal scroll ---------- */
+.hsec{position:relative;overflow:hidden;background:var(--void);padding-block:0}
+.hsec-head{padding:clamp(60px,9vh,110px) 0 0}
+.hviewport{overflow:hidden}
+.htrack{display:flex;width:max-content;gap:clamp(14px,1.6vw,24px);padding:clamp(2rem,5vh,3.4rem) var(--pad) clamp(3.2rem,7vh,5rem)}
+.hpanel{flex:none;width:min(74vw,520px);min-height:min(56vh,440px);border:1px solid var(--hair);border-radius:22px;
+  padding:clamp(1.6rem,3vw,2.4rem);display:flex;flex-direction:column;justify-content:space-between;
+  background:linear-gradient(165deg,rgba(31,74,66,.34),rgba(17,21,20,.2));position:relative;overflow:hidden;
+  transition:border-color .4s,background .4s}
+.hpanel::after{content:"";position:absolute;inset-inline-end:-30%;top:-40%;width:72%;aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(closest-side,rgba(30,155,133,.2),transparent 72%);opacity:0;transition:opacity .5s}
+.hpanel:hover{border-color:rgba(76,192,164,.4)}
+.hpanel:hover::after{opacity:1}
+.hpanel .no{font-family:var(--f-lat);font-weight:700;font-size:clamp(3.4rem,7vw,5.4rem);line-height:1;
+  color:transparent;-webkit-text-stroke:1px rgba(76,192,164,.45)}
+.hpanel h3{font-size:clamp(1.3rem,2.6vw,1.75rem);margin:1.3rem 0 .7rem}
+.hpanel p{color:var(--fg-dim);font-size:.97rem}
+.hpanel .hl{margin-top:1.6rem;height:1px;background:var(--hair);position:relative}
+.hpanel .hl::before{content:"";position:absolute;inset-block:0;inset-inline-start:0;width:34%;background:var(--teal)}
+.hprog{height:2px;background:var(--hair-2);margin:0 var(--pad)}
+@media (min-width:901px) and (min-height:621px){
+  .hsec{height:100svh;display:flex;flex-direction:column;justify-content:center}
+  .hsec-head{flex:none;padding:calc(var(--bar) + 4vh) 0 0}
+  .hviewport{flex:1;min-height:0;display:flex;align-items:center}
+  .htrack{padding-block:0}
+  .hpanel{min-height:min(50vh,400px)}
+  .hprog{flex:none;margin-bottom:6vh}
+}
+.hprog i{display:block;height:100%;width:100%;background:var(--teal);transform-origin:right;transform:scaleX(.16)}
+@media (max-width:900px),(max-height:620px){
+  .hsec{padding-bottom:clamp(60px,9vh,110px)}
+  .htrack{flex-direction:column;width:auto;padding-inline:0;gap:14px}
+  .hpanel{width:auto;min-height:0}
+  .hprog{display:none}
+}
 
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+/* ---------- journey (pinned, 4 scenes) ---------- */
+.jrn{position:relative;height:100svh;overflow:hidden;background:radial-gradient(120% 100% at 70% 10%,var(--steel) 0%,var(--basalt) 45%,var(--void) 100%)}
+.j-steps{position:absolute;z-index:6;top:calc(var(--bar) + 14px);inset-inline:var(--pad);display:flex;gap:10px;align-items:center}
+.j-steps i{flex:1;height:2px;background:var(--hair);position:relative;overflow:hidden;border-radius:2px}
+.j-steps i::after{content:"";position:absolute;inset:0;background:var(--teal);transform-origin:right;transform:scaleX(0);transition:transform .5s ease}
+.j-steps i.on::after{transform:scaleX(1)}
+.j-num{position:absolute;z-index:2;inset-inline-end:var(--pad);top:12%;font-family:var(--f-lat);font-weight:700;
+  font-size:clamp(9rem,24vw,20rem);line-height:.8;color:transparent;-webkit-text-stroke:1px rgba(76,192,164,.13);pointer-events:none}
+.j-stage{position:absolute;inset:0;z-index:3;direction:ltr;pointer-events:none;overflow:hidden}
+.j-stage::after{content:"";position:absolute;inset-inline:0;bottom:0;height:34%;
+  background:linear-gradient(to top,rgba(10,13,12,.9),transparent);pointer-events:none}
+.fig{position:absolute;bottom:0;height:var(--h);opacity:0;visibility:hidden}
+.jrn.live .fig{will-change:transform,opacity}
+.fig>img{position:relative;z-index:1;width:100%;height:100%;object-fit:contain;object-position:bottom center;user-select:none;-webkit-user-drag:none}
+.fig-glow{position:absolute;left:50%;top:46%;width:140%;aspect-ratio:1;border-radius:50%;transform:translate(-50%,-50%);
+  background:radial-gradient(closest-side,rgba(30,155,133,.32),rgba(30,155,133,.1) 48%,rgba(30,155,133,0) 73%)}
+.fig-team  {--h:min(56vh,430px);aspect-ratio:1672/941;left:50%}
+.fig-duo   {--h:min(52vh,410px);aspect-ratio:1448/1086;left:50%;bottom:2vh}
+.fig-mop   {--h:min(66vh,540px);aspect-ratio:1086/1448;left:7%;bottom:3vh}
+.fig-female{--h:min(66vh,540px);aspect-ratio:1086/1448;right:7%;bottom:3vh}
+.fig-team{opacity:1;visibility:visible}          /* static fallback */
+.j-ui{position:absolute;inset:0;z-index:5;pointer-events:none}
+.jc{position:absolute;bottom:clamp(58px,11vh,104px);width:min(46ch,44vw);opacity:0;visibility:hidden;isolation:isolate}
+.jc::before{content:"";position:absolute;inset:-18px -22px -26px;z-index:-1;border-radius:20px;
+  background:radial-gradient(120% 100% at 50% 50%,rgba(10,13,12,.82) 38%,rgba(10,13,12,0) 78%)}
+.jc-a{inset-inline-start:var(--pad)}
+.jc-b{inset-inline-end:var(--pad)}
+.jc .idx{font-family:var(--f-lat);font-size:.72rem;letter-spacing:.24em;color:var(--teal);display:block;margin-bottom:.9rem}
+.jc h3{font-size:clamp(1.7rem,4.2vw,3rem);font-weight:800;letter-spacing:-.02em;line-height:1.16}
+.jc p{margin-top:1rem;color:#BBCEC8;font-size:clamp(.95rem,1.4vw,1.06rem);max-width:40ch}
+.jc .jcta{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.5rem;pointer-events:auto}
+.jc1{opacity:1;visibility:visible}               /* static fallback */
+/* centred figures (scenes 1 & 4) clear the copy vertically instead of sideways */
+.jc1,.jc4{bottom:auto;top:calc(var(--bar) + 5vh)}
+@media (max-width:900px){
+  .jc{width:auto;inset-inline:var(--pad);bottom:auto;top:calc(var(--bar) + 36px);text-align:center}
+  .jc .jcta{justify-content:center}
+  .jc p{margin-inline:auto}
+  .j-num{top:auto;bottom:3%;inset-inline:0;text-align:center;font-size:30vw}
+  .fig-team{--h:min(38vh,290px)}
+  .fig-duo{--h:min(36vh,280px);bottom:0}
+  .fig-mop{--h:min(46vh,340px);left:1%;bottom:0}
+  .fig-female{--h:min(46vh,340px);right:1%;bottom:0}
+  .j-stage::after{height:46%}
+}
 
-.card{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:1.75rem;box-shadow:var(--shadow-sm);transition:transform .3s, box-shadow .3s, border-color .3s;position:relative;overflow:hidden}
-.card::before{content:"";position:absolute;top:0;inset-inline-start:0;width:100%;height:3px;background:var(--grad-teal);transform:scaleX(0);transform-origin:right;transition:transform .35s}
-.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:#CFC7B8}
-.card:hover::before{transform:scaleX(1)}
-.card .idx{font-family:"IBM Plex Mono";font-size:.78rem;color:var(--teal-deep);letter-spacing:.1em}
-.card h3{font-size:1.16rem;margin:.6rem 0 .55rem}
-.card p{color:var(--ink-soft);font-size:.95rem;margin:0 0 1rem}
-.card .more{font-size:.88rem;font-weight:600;color:var(--ink);border-bottom:2px solid var(--teal);padding-bottom:2px}
+/* laptops & tablets in landscape — keep scenes 1 & 4 clear of their figure */
+@media (min-width:901px) and (max-height:820px){
+  .jc1,.jc4{top:calc(var(--bar) + 2vh)}
+  .jc h3{font-size:clamp(1.5rem,3.2vw,2.2rem)}
+  .jc p{font-size:.95rem;margin-top:.7rem}
+  .jc .jcta{margin-top:1.1rem}
+  .fig-team{--h:min(46vh,360px)}
+  .fig-duo{--h:min(44vh,340px)}
+  .fig-mop,.fig-female{--h:min(60vh,430px)}
+}
 
-/* fleet table */
-.fleet{background:var(--grad-sand);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow-md)}
-table{width:100%;border-collapse:collapse;font-size:.95rem}
-thead{background:var(--steel);color:#fff}
-th,td{padding:1rem 1.25rem;text-align:right}
-th{font-family:"Readex Pro";font-weight:500;font-size:.9rem}
-tbody tr{border-bottom:1px solid rgba(0,0,0,.07)}
-tbody tr:last-child{border-bottom:0}
-tbody tr:hover{background:rgba(255,255,255,.6)}
-td.n{font-family:"IBM Plex Mono";font-weight:600}
+/* ---- phones held sideways: short and wide ---- */
+@media (max-height:560px) and (orientation:landscape){
+  :root{--bar:58px}
+  .hero{min-height:auto;padding-bottom:1.8rem}
+  .hero-grid{padding-top:calc(var(--bar) + 14px)}
+  .hero h1{font-size:clamp(1.5rem,3.8vw,2.3rem);margin-top:.7rem}
+  .hero .lead{font-size:.9rem;margin:.8rem 0 1.1rem}
+  .hero-copy{max-width:min(460px,52vw)}
+  .hero-art{width:min(46vw,470px)}
+  .facts,.ghost,.scroll-cue{display:none}
+  .btn{padding:.72rem 1.15rem;font-size:.85rem}
+  .sheet{justify-content:flex-start;overflow-y:auto}
+  .sheet a{font-size:clamp(1.15rem,4.4vw,1.7rem);padding:.15rem 0}
+  .sheet .sheet-foot{margin-top:1rem}
+  .jrn{height:100svh}
+  .j-steps{top:calc(var(--bar) + 8px)}
+  .jc{width:min(36vw,340px);bottom:auto;top:50%;translate:0 -50%;text-align:start}
+  .jc1,.jc4{top:50%;bottom:auto}
+  .jc .idx{margin-bottom:.5rem}
+  .jc h3{font-size:clamp(1.05rem,2.6vw,1.45rem)}
+  .jc p{font-size:.84rem;margin-top:.5rem;line-height:1.7;margin-inline:0}
+  .jc .jcta{margin-top:.9rem;justify-content:flex-start}
+  .fig-team{--h:min(58vh,240px);left:30%}
+  .fig-duo{--h:min(56vh,230px);left:30%;bottom:0}
+  .fig-mop{--h:min(84vh,320px);left:2%;bottom:0}
+  .fig-female{--h:min(84vh,320px);right:2%;bottom:0}
+  .j-num{font-size:16vh;top:8%}
+  .j-stage::after{height:30%}
+  .wf-visual{max-width:210px}
+  .sec{padding:clamp(48px,8vh,90px) 0}
+}
 
-/* process */
-.steps{counter-reset:s;display:grid;grid-template-columns:repeat(5,1fr);gap:1.25rem}
-.step{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:1.4rem;box-shadow:var(--shadow-sm);position:relative}
-.step::after{counter-increment:s;content:"0" counter(s);position:absolute;top:1rem;inset-inline-end:1rem;font-family:"IBM Plex Mono";font-size:.8rem;color:var(--teal-deep);opacity:.9}
-.step h4{font-size:1rem;margin:.4rem 0 .45rem}
-.step p{font-size:.88rem;color:var(--ink-soft);margin:0}
+/* ---- very small phones ---- */
+@media (max-width:900px) and (max-height:660px){
+  .jc h3{font-size:1.35rem}
+  .jc p{font-size:.86rem;margin-top:.45rem}
+  .jc .jcta{margin-top:.9rem}
+  .fig-team{--h:min(30vh,210px)}
+  .fig-duo{--h:min(28vh,200px)}
+  .fig-mop,.fig-female{--h:min(38vh,260px)}
+}
+@media (max-width:360px){
+  :root{--pad:16px}
+  .hero h1{font-size:2rem}
+  .brand .bn span{display:none}
+  .topbar .btn{padding:.65rem .9rem;font-size:.8rem}
+  .marq-track span{font-size:.9rem}
+}
 
-/* partners band */
-.band{background:var(--grad-dark);color:#fff;border-radius:20px;padding:3rem;box-shadow:var(--shadow-lg);position:relative;overflow:hidden}
-.band::after{content:"";position:absolute;inset-inline-start:-40px;bottom:-40px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(30,155,133,.28),transparent 70%)}
-.band .inner{display:grid;grid-template-columns:1.2fr .8fr;gap:2.5rem;align-items:center;position:relative}
-.band h2{font-size:clamp(1.5rem,2.6vw,2rem)}
-.band p{color:#C4D6D0;margin:1rem 0 0}
+/* ---------- workforce · sticky split ---------- */
+.wf-grid{display:grid;grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);gap:clamp(1.5rem,4vw,3.5rem);align-items:start}
+.wf-visual{position:sticky;top:calc(var(--bar) + 30px)}
+.wf-frame{position:relative;aspect-ratio:4/5;max-height:min(62vh,580px);width:auto;max-width:100%;margin-inline:auto;border-radius:220px 220px 26px 26px;overflow:hidden;
+  background:linear-gradient(170deg,var(--steel-2),var(--void));border:1px solid var(--hair)}
+.wf-frame::before{content:"";position:absolute;inset:0;background:radial-gradient(70% 55% at 50% 78%,rgba(30,155,133,.34),transparent 70%)}
+.wf-img{position:absolute;inset:auto 0 0;width:100%;height:92%;object-fit:contain;object-position:bottom center;
+  opacity:0;transform:translateY(16px) scale(.98);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.8,.2,1)}
+.wf-img.on{opacity:1;transform:none}
+.wf-count{display:flex;align-items:baseline;gap:.55rem;margin-top:1.1rem;color:var(--fg-dim);font-size:.84rem}
+.wf-count .of{font-family:var(--f-lat);letter-spacing:.12em}
+.wf-count b{font-size:2rem;color:var(--teal);font-weight:700;line-height:1}
+.wf-row{position:relative;display:grid;grid-template-columns:auto 1fr;gap:clamp(1rem,2.5vw,2rem);
+  padding:clamp(1.5rem,3.4vw,2.4rem) 0;border-bottom:1px solid var(--hair);transition:border-color .4s}
+.wf-row:first-child{border-top:1px solid var(--hair)}
+.wf-row .no{font-family:var(--f-lat);font-size:.75rem;letter-spacing:.2em;color:var(--fg-dim);padding-top:.7rem;transition:color .4s}
+.wf-row h3{font-size:clamp(1.35rem,3vw,2.1rem);font-weight:700;color:rgba(234,243,240,.42);transition:color .45s,transform .45s cubic-bezier(.2,.8,.2,1)}
+.wf-row p{color:var(--fg-dim);font-size:.96rem;margin-top:.5rem;max-width:44ch;
+  opacity:0;max-height:0;overflow:hidden;transition:opacity .45s,max-height .55s ease}
+.wf-row .chips{display:flex;gap:.45rem;flex-wrap:wrap;margin-top:.9rem;opacity:0;max-height:0;overflow:hidden;transition:opacity .45s,max-height .55s ease}
+.wf-row .chips span{font-family:var(--f-body);font-size:.76rem;color:var(--mint);
+  border:1px solid rgba(76,192,164,.3);border-radius:999px;padding:.24rem .7rem}
+.wf-row.on{border-color:rgba(76,192,164,.34)}
+.wf-row.on .no{color:var(--teal)}
+.wf-row.on h3{color:var(--fg);transform:translateX(-6px)}
+.wf-row.on p,.wf-row.on .chips{opacity:1;max-height:220px}
+@media (max-width:900px){
+  .wf-grid{grid-template-columns:1fr}
+  .wf-visual{position:sticky;top:calc(var(--bar) + 10px);max-width:260px;margin-inline:auto}
+  .wf-frame{aspect-ratio:3/4;border-radius:130px 130px 20px 20px}
+  .wf-row.on h3{transform:none}
+}
 
-/* quote form */
-.quote{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:2rem;box-shadow:var(--shadow-md)}
-.field{margin-bottom:1.1rem}
-label{display:block;font-size:.88rem;font-weight:600;margin-bottom:.4rem}
-input,select,textarea{width:100%;font-family:inherit;font-size:.95rem;padding:.8rem .95rem;border:1px solid var(--line);border-radius:10px;background:#FCFBF9;transition:border-color .2s, box-shadow .2s}
-input:focus,select:focus,textarea:focus{border-color:var(--teal);box-shadow:0 0 0 4px rgba(30,155,133,.15);outline:none}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.contact-list{list-style:none;padding:0;margin:0}
-.contact-list li{display:flex;gap:.85rem;align-items:flex-start;padding:1rem 0;border-bottom:1px solid var(--line)}
-.contact-list li:last-child{border-bottom:0}
-.contact-list span{font-size:.82rem;color:var(--ink-soft);display:block}
-.contact-list b{font-family:"Readex Pro";font-weight:500}
-.dot{width:34px;height:34px;border-radius:9px;background:var(--grad-sand);border:1px solid var(--line);display:grid;place-items:center;flex:none;font-size:1rem}
+/* ---------- process · drawn timeline ---------- */
+.tl{position:relative;padding-inline-start:clamp(28px,6vw,64px)}
+.tl-line{position:absolute;inset-block:6px 40px;inset-inline-start:0;width:2px;background:var(--hair-2);border-radius:2px;overflow:hidden}
+.tl-line i{position:absolute;inset:0;background:linear-gradient(var(--mint),var(--teal));transform-origin:top;transform:scaleY(0)}
+.tl-item{position:relative;padding-block:clamp(1.4rem,3.4vw,2.4rem)}
+.tl-item::before{content:"";position:absolute;inset-inline-start:calc(clamp(28px,6vw,64px)*-1 - 5px);top:calc(clamp(1.4rem,3.4vw,2.4rem) + 14px);
+  width:12px;height:12px;border-radius:50%;background:var(--basalt);border:2px solid var(--hair);transition:border-color .4s,background .4s,box-shadow .4s}
+.tl-item.on::before{background:var(--teal);border-color:var(--teal);box-shadow:0 0 0 6px rgba(30,155,133,.16)}
+.tl-item .st{display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap}
+.tl-item .st i{font-family:var(--f-lat);font-style:normal;font-size:.75rem;letter-spacing:.2em;color:var(--teal)}
+.tl-item h3{font-size:clamp(1.2rem,2.6vw,1.65rem)}
+.tl-item p{color:var(--fg-dim);margin-top:.5rem;max-width:56ch;font-size:.97rem}
 
-/* footer */
-footer{background:var(--basalt);color:#93A69F;padding:3.5rem 0 1.5rem;font-size:.92rem}
-.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2rem}
-footer h5{font-family:"Readex Pro";color:#fff;font-size:.95rem;margin:0 0 1rem;font-weight:500}
-footer ul{list-style:none;padding:0;margin:0}
-footer li{margin-bottom:.6rem}
-footer a:hover{color:var(--teal)}
-.f-bottom{margin-top:2.5rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.85rem}
+.vh{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;
+  clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
 
-/* whatsapp */
-.wa{position:fixed;inset-inline-start:20px;bottom:20px;z-index:60;background:#25D366;color:#04310F;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;box-shadow:0 10px 22px rgba(37,211,102,.4);transition:transform .25s}
-.wa:hover{transform:scale(1.08)}
+/* ---------- FAQ ---------- */
+.faq{max-width:900px}
+.faq details{border-bottom:1px solid var(--hair)}
+.faq details:first-of-type{border-top:1px solid var(--hair)}
+.faq summary{display:flex;align-items:flex-start;gap:1rem;cursor:pointer;list-style:none;
+  padding:clamp(1.1rem,2.6vw,1.6rem) 0;font-family:var(--f-display);font-weight:700;
+  font-size:clamp(1.02rem,2.2vw,1.3rem);transition:color .3s}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:hover{color:var(--mint)}
+.faq summary .q{flex:1}
+.faq summary .pm{flex:none;width:26px;height:26px;border-radius:50%;border:1px solid var(--hair);
+  display:grid;place-items:center;position:relative;margin-top:.25rem;transition:border-color .3s,background .3s}
+.faq summary .pm::before,.faq summary .pm::after{content:"";position:absolute;background:var(--fg);transition:transform .35s,background .3s}
+.faq summary .pm::before{width:11px;height:1.5px}
+.faq summary .pm::after{width:1.5px;height:11px}
+.faq details[open] summary{color:var(--mint)}
+.faq details[open] .pm{border-color:var(--teal);background:rgba(30,155,133,.16)}
+.faq details[open] .pm::after{transform:scaleY(0)}
+.faq details[open] .pm::before{background:var(--mint)}
+.faq .a{color:var(--fg-dim);padding:0 0 clamp(1.1rem,2.6vw,1.6rem);max-width:72ch;font-size:.98rem}
+.faq .a a{color:var(--mint);border-bottom:1px solid rgba(76,192,164,.4)}
 
-/* reveal */
-.rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease, transform .7s ease}
+/* ---------- CTA ---------- */
+.cta{position:relative;overflow:hidden;text-align:center;
+  background:radial-gradient(90% 120% at 50% 0%,var(--steel) 0%,var(--basalt) 55%,var(--void) 100%)}
+.cta h2{font-size:clamp(2.1rem,6.6vw,4.6rem);font-weight:800;letter-spacing:-.025em;max-width:20ch;margin-inline:auto;line-height:1.12}
+.cta p{color:var(--fg-dim);max-width:52ch;margin:1.4rem auto 2.4rem}
+.cta .row{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}
+.cta-ghost{position:absolute;inset-inline:0;bottom:-2%;font-family:var(--f-display);font-weight:800;font-size:18vw;line-height:.8;
+  text-align:center;color:transparent;-webkit-text-stroke:1px rgba(76,192,164,.1);pointer-events:none;user-select:none}
+
+/* ---------- quote ---------- */
+.q-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(2rem,5vw,4.5rem);align-items:start}
+.q-contact{display:flex;flex-direction:column;gap:1.6rem}
+.q-contact a,.q-contact div{display:block}
+.q-contact span{display:block;font-family:var(--f-lat);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:.3rem}
+.q-contact b{font-family:var(--f-display);font-weight:700;font-size:clamp(1.05rem,2.1vw,1.35rem);color:var(--ink);word-break:break-word}
+.q-contact a:hover b{color:var(--teal-deep)}
+.qf{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1rem,2.4vw,1.8rem)}
+.fld{position:relative;display:flex;flex-direction:column}
+.fld--full{grid-column:1/-1}
+.fld label{font-family:var(--f-lat);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:.5rem}
+.fld input,.fld select,.fld textarea{font-family:var(--f-body);font-size:1rem;color:var(--ink);
+  background:transparent;border:0;border-bottom:1px solid var(--line);padding:.6rem 0;width:100%;
+  transition:border-color .3s,box-shadow .3s;border-radius:0}
+.fld textarea{resize:vertical;min-height:84px}
+.fld select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--ink-soft) 50%),linear-gradient(135deg,var(--ink-soft) 50%,transparent 50%);
+  background-position:left 6px center,left 1px center;background-size:5px 5px,5px 5px;background-repeat:no-repeat;padding-inline-end:0}
+.fld input:focus,.fld select:focus,.fld textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 1px 0 0 var(--teal)}
+.fld input::placeholder,.fld textarea::placeholder{color:#A9B7B2}
+.qf .submit{grid-column:1/-1;display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;margin-top:.6rem}
+.qf .note{font-size:.84rem;color:var(--ink-soft)}
+#ok,#err{grid-column:1/-1;margin:0;font-weight:700;font-size:.92rem}
+#ok{color:var(--teal-deep)}#err{color:#B3261E}
+@media (max-width:900px){.q-grid,.qf{grid-template-columns:1fr}}
+
+/* ---------- footer ---------- */
+.ft{background:var(--void);border-top:1px solid var(--hair-2);padding-top:clamp(56px,8vh,90px)}
+.ft-word{font-family:var(--f-display);font-weight:800;font-size:clamp(3rem,14vw,11rem);line-height:.9;letter-spacing:-.04em;
+  color:transparent;-webkit-text-stroke:1px rgba(76,192,164,.3);padding-bottom:.08em}
+.ft-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:clamp(1.6rem,4vw,3rem);
+  padding-block:clamp(2.2rem,5vw,3.4rem);border-top:1px solid var(--hair-2);margin-top:clamp(1.5rem,4vw,2.6rem)}
+.ft h5{font-family:var(--f-lat);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--fg-dim);margin:0 0 1rem;font-weight:500}
+.ft li{margin-bottom:.35rem}
+.ft li a{display:inline-block;padding-block:.4rem}
+.ft a:hover{color:var(--mint)}
+.ft-big{font-family:var(--f-display);font-weight:700;font-size:clamp(1rem,2vw,1.2rem)}
+.ft-bottom{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+  padding:1.3rem 0 76px;border-top:1px solid var(--hair-2);font-size:.82rem;color:var(--fg-dim)}
+@media (max-width:820px){.ft-grid{grid-template-columns:1fr 1fr}.ft-grid>:first-child{grid-column:1/-1}}
+
+/* ---------- whatsapp ---------- */
+.wa{position:fixed;inset-inline-end:18px;bottom:18px;z-index:70;display:flex;align-items:center;gap:.55rem;
+  background:#25D366;color:#04310F;padding:.7rem 1.1rem;border-radius:999px;font-weight:700;font-size:.86rem;
+  box-shadow:0 12px 28px rgba(37,211,102,.32);transition:transform .3s}
+.wa:hover{transform:translateY(-3px)}
+@media (max-width:520px){.wa span{display:none}.wa{padding:.85rem;border-radius:50%}}
+
+/* ---------- reveal (no-JS + fallback) ---------- */
+.rv{opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease}
 .rv.in{opacity:1;transform:none}
-
-/* ---------- 3D showcase (Three.js + GSAP ScrollTrigger + Lenis) ---------- */
-html.lenis{scroll-behavior:auto}
 html.gsap .rv{opacity:1;transform:none;transition:none}
-.w,.digits .c{display:inline-block}
-.scene3d{position:relative;height:100vh;height:100svh;background:var(--grad-dark);overflow:hidden;color:#fff}
-.s3-canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
-.s3-glow{position:absolute;inset:0;pointer-events:none;background:radial-gradient(60% 50% at 68% 30%,rgba(30,155,133,.16),transparent 65%),radial-gradient(45% 40% at 22% 75%,rgba(76,192,164,.10),transparent 70%)}
-.s3-vignette{position:absolute;inset:0;pointer-events:none;background:radial-gradient(120% 90% at 50% 45%,transparent 55%,rgba(10,14,19,.55) 100%)}
-.s3-ui{position:absolute;inset:0;z-index:3;pointer-events:none}
-.ch{position:absolute;top:50%;translate:0 -50%;inset-inline:0;padding-inline:min(7vw,110px);opacity:0;visibility:hidden}
-.ch .k{display:inline-block;font-family:"IBM Plex Mono";font-size:.78rem;letter-spacing:.18em;color:var(--teal);border:1px solid rgba(30,155,133,.35);background:rgba(17,21,20,.5);padding:.35rem .85rem;border-radius:999px;margin-bottom:1.25rem;backdrop-filter:blur(4px)}
-.ch h3{font-size:clamp(2.1rem,6vw,4.3rem);font-weight:700;line-height:1.3;letter-spacing:-.02em;text-shadow:0 4px 30px rgba(6,10,15,.6)}
-.ch p{color:#C8D8D2;font-size:clamp(1rem,1.6vw,1.2rem);max-width:44ch;margin:1.2rem 0 0;text-shadow:0 2px 18px rgba(6,10,15,.7)}
-.ch .stat{display:flex;align-items:baseline;gap:.8rem}
-.ch .stat .digits{font-family:"IBM Plex Mono";font-size:clamp(4.5rem,14vw,9.5rem);font-weight:600;color:var(--teal);line-height:1;text-shadow:0 8px 44px rgba(30,155,133,.35)}
-.ch .stat .unit{font-family:"Readex Pro";font-size:clamp(1.2rem,2.6vw,1.9rem);color:#E8F1EE}
-.ch .stat .digits--txt{font-family:"Readex Pro";font-weight:700;font-size:clamp(2.6rem,8.5vw,6rem);line-height:1.15}
-.ch1,.ch4{text-align:center}
-.ch1 h3{max-width:22ch;margin-inline:auto}
-.ch1 p,.ch4 p{margin-inline:auto}
-.ch-cta{display:flex;gap:.9rem;justify-content:center;margin-top:1.7rem;pointer-events:auto}
-.s3-rail{position:absolute;inset-inline-end:2rem;top:50%;translate:0 -50%;z-index:4;display:flex;flex-direction:column;gap:26px;align-items:center}
-.s3-rail::before{content:"";position:absolute;top:4px;bottom:4px;width:2px;background:rgba(255,255,255,.14);border-radius:2px}
-.s3-fill{position:absolute;top:4px;height:calc(100% - 8px);width:2px;background:var(--grad-teal);transform-origin:top;transform:scaleY(0);border-radius:2px}
-.s3-dot{width:9px;height:9px;border-radius:50%;background:#24332F;border:1px solid rgba(255,255,255,.25);z-index:1;transition:background .3s,box-shadow .3s}
-.s3-dot.on{background:var(--teal);box-shadow:0 0 12px rgba(30,155,133,.8)}
-.s3-hint{position:absolute;bottom:1.8rem;inset-inline:0;text-align:center;z-index:4;color:#A3B5AF;font-size:.8rem;font-family:"IBM Plex Mono";letter-spacing:.12em}
-.s3-hint .arr{display:inline-block;margin-inline-start:.4rem;animation:s3bob 1.6s ease-in-out infinite}
-@keyframes s3bob{50%{transform:translateY(6px)}}
-@media (min-width:981px){
-  .ch2{padding-inline-end:52vw}
-  .ch3{padding-inline-start:52vw}
-}
-@media (max-width:980px){
-  .ch{text-align:center}
-  .ch h3,.ch p{margin-inline:auto}
-  .ch .stat{justify-content:center}
-  .s3-rail{display:none}
-}
+html.lenis{scroll-behavior:auto}
 
-@media (max-width:980px){
-  .hero .wrap{grid-template-columns:1fr;gap:2.5rem;padding:3.5rem 0}
-  .grid-3,.grid-2,.steps,.band .inner,.f-grid{grid-template-columns:1fr}
-  .menu{display:none}
-  .nav-toggle{display:block}
-  .menu.open{display:flex;position:absolute;top:76px;inset-inline:0;background:#fff;flex-direction:column;padding:1.25rem 4vw;gap:1rem;border-bottom:1px solid var(--line);box-shadow:var(--shadow-md)}
-  .nav .btn-primary{display:none}
-  .two{grid-template-columns:1fr}
-  .band{padding:2rem}
-  table{font-size:.85rem}
-  th,td{padding:.75rem}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+  .marq-track{animation:none}
+  .wf-row p,.wf-row .chips{opacity:1;max-height:none}
+  .wf-img.on{opacity:1}
 }
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 </style>
-</head>
-<body>
-<a href="#main" class="skip-link">تخطَّ إلى المحتوى الرئيسي</a>
 
-<div class="util">
-  <div class="wrap">
-    <div class="util-group">
-      <span>س.ت: <span class="num">••••••••••</span></span>
-      <span>مكة · المنطقة الشرقية</span>
-    </div>
-    <div class="util-group">
-      <a href="tel:+966557078010" class="num">+966557078010</a>
-      <a href="mailto:rekazlogistic@gmail.com">rekazlogistic@gmail.com</a>
-      <a href="#">EN</a>
-    </div>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":["ProfessionalService","Organization"],
+      "@id":"https://REPLACE-WITH-YOUR-DOMAIN.com/#org",
+      "name":"مؤسسة الوثاق الأمثل التجارية",
+      "alternateName":"Al-Wethaq Al-Amthal Trading Est.",
+      "url":"https://REPLACE-WITH-YOUR-DOMAIN.com/",
+      "logo":"https://REPLACE-WITH-YOUR-DOMAIN.com/assets/brand/mark-512.png",
+      "image":"https://REPLACE-WITH-YOUR-DOMAIN.com/assets/brand/og-cover.png",
+      "description":"مؤسسة سعودية لتوريد وتشغيل القوى العاملة للمنشآت والمشاريع: عمال نظافة، عمال مستودعات، تحميل وتنزيل، كوادر مساندة ومشرفو مواقع، بعقود مرنة وورديات حسب احتياج كل موقع.",
+      "telephone":"+966555894558",
+      "email":"alwethaq.alamthal@gmail.com",
+      "identifier":{"@type":"PropertyValue","name":"السجل التجاري","value":"7055197052"},
+      "address":{"@type":"PostalAddress","addressCountry":"SA"},
+      "areaServed":{"@type":"Country","name":"المملكة العربية السعودية"},
+      "knowsLanguage":["ar","en"],
+      "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday","Monday","Tuesday","Wednesday","Thursday"],"opens":"08:00","closes":"17:00"}],
+      "contactPoint":[{"@type":"ContactPoint","telephone":"+966555894558","email":"alwethaq.alamthal@gmail.com","contactType":"sales","availableLanguage":["Arabic","English"],"areaServed":"SA"}],
+      "hasOfferCatalog":{
+        "@type":"OfferCatalog","name":"حلول القوى العاملة والتشغيل",
+        "itemListElement":[
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"تشغيل عمال النظافة","description":"فرق نظافة للمرافق والمكاتب والمواقع وفق ساعات العمل والورديات المطلوبة."}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"عمال تشغيل للمواقع","description":"كوادر مساندة للأعمال التشغيلية اليومية داخل المواقع والمشاريع."}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"عمال مستودعات","description":"عمالة للفرز والترتيب والمناولة وتجهيز الطلبات داخل المستودعات."}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"تحميل وتنزيل","description":"فرق مساندة لعمليات التحميل والتنزيل ونقل المواد داخل مواقع العمل."}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"مشرفو مواقع","description":"تنسيق فرق العمل ومتابعة الحضور والمهام وسير التشغيل داخل الموقع."}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"عقود تشغيل طويلة الأجل","description":"حلول تشغيل للقوى العاملة حسب مدة المشروع وحجم الفريق المطلوب."}}
+        ]
+      }
+    },
+    {"@type":"WebSite","@id":"https://REPLACE-WITH-YOUR-DOMAIN.com/#website","url":"https://REPLACE-WITH-YOUR-DOMAIN.com/","name":"مؤسسة الوثاق الأمثل التجارية","inLanguage":"ar","publisher":{"@id":"https://REPLACE-WITH-YOUR-DOMAIN.com/#org"}},
+    {"@type":"WebPage","@id":"https://REPLACE-WITH-YOUR-DOMAIN.com/#webpage","url":"https://REPLACE-WITH-YOUR-DOMAIN.com/","name":"توريد وتشغيل عمالة ونظافة | مؤسسة الوثاق الأمثل التجارية","isPartOf":{"@id":"https://REPLACE-WITH-YOUR-DOMAIN.com/#website"},"about":{"@id":"https://REPLACE-WITH-YOUR-DOMAIN.com/#org"},"inLanguage":"ar","primaryImageOfPage":"https://REPLACE-WITH-YOUR-DOMAIN.com/assets/brand/og-cover.png"},
+    {
+      "@type":"FAQPage","@id":"https://REPLACE-WITH-YOUR-DOMAIN.com/#faq",
+      "mainEntity":[
+        {"@type":"Question","name":"ما الخدمات التي تقدمها مؤسسة الوثاق الأمثل التجارية؟","acceptedAnswer":{"@type":"Answer","text":"نوفّر القوى العاملة وفرق التشغيل للمنشآت والمشاريع: عمال نظافة للمرافق والمكاتب، عمال مستودعات للفرز والمناولة وتجهيز الطلبات، فرق تحميل وتنزيل، كوادر تشغيل ومساندة، ومشرفو مواقع لإدارة الفرق ومتابعة سير العمل."}},
+        {"@type":"Question","name":"كم عدد العمال الذي يمكن توفيره؟","acceptedAnswer":{"@type":"Answer","text":"يُحدَّد العدد حسب احتياج كل مشروع. أرسل لنا نوع العمل والعدد المطلوب وموقع المشروع ومدته ونظام الورديات، ونرتّب لك تصوّر التشغيل المناسب ضمن عرض واضح."}},
+        {"@type":"Question","name":"ما نظام الورديات وساعات العمل؟","acceptedAnswer":{"@type":"Answer","text":"نظام الورديات مرن ويُبنى على طبيعة الموقع وساعات تشغيله. يتم الاتفاق على الوردية وتوزيع المهام قبل مباشرة الفريق."}},
+        {"@type":"Question","name":"ما مدة العقد؟ وهل توجد عقود قصيرة؟","acceptedAnswer":{"@type":"Answer","text":"نمط التعاقد مرن حسب المشروع، ويشمل التشغيل قصير المدى وعقود التشغيل طويلة الأجل المرتبطة بمدة المشروع وحجم الفريق المطلوب."}},
+        {"@type":"Question","name":"ما القطاعات التي تخدمونها؟","acceptedAnswer":{"@type":"Answer","text":"نخدم المشاريع والمكاتب والمجمعات والمستودعات والمصانع والمرافق وقطاع الضيافة داخل المملكة العربية السعودية."}},
+        {"@type":"Question","name":"كيف أطلب فريق عمل؟ وكم يستغرق الرد؟","acceptedAnswer":{"@type":"Answer","text":"عبّئ نموذج «اطلب فريقك» في الموقع أو تواصل عبر الجوال 0555894558 أو واتساب أو البريد alwethaq.alamthal@gmail.com. يصلك تصوّر التشغيل وعرض السعر خلال يومي عمل."}}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body id="top">
+<a href="#main" class="skip">تخطَّ إلى المحتوى الرئيسي</a>
+
+<!-- ============ side rail (desktop) ============ -->
+<aside class="rail" aria-label="تنقّل سريع">
+  <a class="rail-mark" href="#top" aria-label="الوثاق الأمثل — أعلى الصفحة">
+    <svg viewBox="0 0 48 48" width="40" height="40" aria-hidden="true">
+      <rect x="4" y="16" width="25" height="16" rx="8" fill="none" stroke="#1E9B85" stroke-width="3.4"/>
+      <rect x="19" y="16" width="25" height="16" rx="8" fill="none" stroke="#4CC0A4" stroke-width="3.4"/>
+    </svg>
+  </a>
+  <nav class="rail-nav">
+    <a class="rail-dot on" href="#about"     data-label="من نحن" aria-label="من نحن"></a>
+    <a class="rail-dot"    href="#services"  data-label="الخدمات" aria-label="الخدمات"></a>
+    <a class="rail-dot"    href="#workforce" data-label="الكوادر" aria-label="الكوادر"></a>
+    <a class="rail-dot"    href="#process"   data-label="كيف نعمل" aria-label="كيف نعمل"></a>
+    <a class="rail-dot"    href="#faq"       data-label="أسئلة شائعة" aria-label="أسئلة شائعة"></a>
+    <a class="rail-dot"    href="#quote"     data-label="تواصل معنا" aria-label="تواصل معنا"></a>
+  </nav>
+  <span class="rail-cr">CR 7055197052</span>
+</aside>
+
+<!-- ============ top bar ============ -->
+<header class="topbar" id="topbar">
+  <a class="brand" href="#top">
+    <svg viewBox="0 0 48 48" aria-hidden="true">
+      <rect x="4" y="16" width="25" height="16" rx="8" fill="none" stroke="#1E9B85" stroke-width="3.4"/>
+      <rect x="19" y="16" width="25" height="16" rx="8" fill="none" stroke="#4CC0A4" stroke-width="3.4"/>
+    </svg>
+    <span class="bn"><b>الوثاق الأمثل</b><span>AL·WETHAQ AL·AMTHAL</span></span>
+  </a>
+  <a href="#quote" class="btn btn-primary">اطلب فريقك</a>
+  <button class="burger" id="burger" aria-label="القائمة" aria-expanded="false" aria-controls="sheet"><span></span></button>
+</header>
+
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="القائمة">
+  <a href="#about"><i>01</i>من نحن</a>
+  <a href="#services"><i>02</i>الخدمات</a>
+  <a href="#workforce"><i>03</i>الكوادر</a>
+  <a href="#process"><i>04</i>كيف نعمل</a>
+  <a href="#faq"><i>05</i>أسئلة شائعة</a>
+  <a href="#quote"><i>06</i>تواصل معنا</a>
+  <div class="sheet-foot">
+    <a href="tel:+966555894558" class="lat" dir="ltr">+966 55 589 4558</a>
+    <a href="mailto:alwethaq.alamthal@gmail.com">alwethaq.alamthal@gmail.com</a>
+    <span class="lat">CR 7055197052</span>
   </div>
 </div>
-<div class="hazard hazard--thin"></div>
-
-<header class="nav">
-  <div class="wrap">
-    <a class="brand" href="#">
-      <img class="logo-img" src="assets/rekaz-logo.png" alt="شعار ركاز">
-    </a>
-    <nav class="menu" id="menu">
-      <a href="#services">الخدمات</a>
-      <a href="#fleet">الأسطول</a>
-      <a href="#process">كيف نعمل</a>
-      <a href="#partners">شركاء الأسطول</a>
-      <a href="#quote">تواصل معنا</a>
-    </nav>
-    <a href="#quote" class="btn btn-primary">اطلب عرض سعر</a>
-    <button class="nav-toggle" id="toggle" aria-label="القائمة" aria-expanded="false">☰</button>
-  </div>
-</header>
 
 <main id="main" tabindex="-1">
 
-<!-- HERO -->
-<div class="hero">
-  <div class="wrap">
-    <div>
-      <span class="eyebrow">تأجير وتشغيل أساطيل · مشاريع صناعية</span>
-      <h1>أساطيل قلابات جاهزة للعمل في <em>موقع مشروعك</em>.</h1>
-      <p class="lead">نوفّر شاحنات قلابة سعة 24 م³ بعقود إيجار شهرية، مع التصاريح والتأمين والصيانة وشاحنات بديلة — لنقل الرمال ومواد الردم في مشاريع أرامكو والمشاريع الصناعية والإنشائية.</p>
-      <div class="hero-cta">
-        <a href="#quote" class="btn btn-primary">اطلب عرض سعر</a>
-        <a href="#fleet" class="btn btn-ghost">تصفّح الأسطول</a>
-      </div>
-    </div>
+<!-- ============ HERO ============ -->
+<section class="hero" data-scene="hero">
+  <div class="layer" data-depth="1" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span></div>
+  <div class="ghost" data-depth="2" aria-hidden="true"><span>قوى عاملة</span><span>تُدار باحتراف</span></div>
+  <img class="hero-art" data-depth="3" src="assets/workers/cleaner-team.png" alt="فريق تشغيل ونظافة من مؤسسة الوثاق الأمثل بعربة نظافة وأدوات تنظيف" width="1672" height="941" fetchpriority="high" decoding="async">
+  <div class="layer grain" data-depth="5" aria-hidden="true"></div>
 
-    <aside class="plate" aria-label="مواصفات التشغيل">
-      <div class="plate-head"><span>OPERATING SPEC</span><b>لوحة التشغيل</b></div>
-      <dl style="margin:0">
-        <div class="spec"><dt>سعة الصندوق</dt><dd><span class="cnt" data-to="24">24</span><small>م³</small></dd></div>
-        <div class="spec"><dt>حجم الأسطول المتاح</dt><dd>حسب الطلب</dd></div>
-        <div class="spec"><dt>موديلات الشاحنات</dt><dd>2025–2026</dd></div>
-        <div class="spec"><dt>نوبة التشغيل</dt><dd><span class="cnt" data-to="10">10</span><small>ساعات</small></dd></div>
-        <div class="spec"><dt>شاحنة بديلة خلال</dt><dd><span class="cnt" data-to="48">48</span><small>ساعة</small></dd></div>
-      </dl>
-    </aside>
-  </div>
-</div>
-<div class="hazard"></div>
-
-<!-- 3D SHOWCASE — pinned, scroll-scrubbed WebGL journey (Three.js + GSAP ScrollTrigger + Lenis) -->
-<section class="scene3d" id="showcase" aria-label="جولة ثلاثية الأبعاد في الأسطول">
-  <div class="s3-glow" data-depth="1" aria-hidden="true"></div>
-  <canvas class="s3-canvas" id="s3-canvas" data-depth="3" aria-hidden="true"></canvas>
-  <div class="s3-vignette" data-depth="5" aria-hidden="true"></div>
-
-  <div class="s3-ui" data-depth="4">
-    <div class="ch ch1">
-      <span class="k">REKAZ · جولة ثلاثية الأبعاد</span>
-      <h3 class="s3-title">قوة نقل صُمّمت لمشاريع لا تتوقف</h3>
-      <p class="s3-sub">تابع التمرير لتدور حول القلاب وتشاهده من كل زاوية — من الكابينة إلى الصندوق.</p>
-    </div>
-
-    <div class="ch ch2">
-      <span class="k">سعة الصندوق</span>
-      <div class="stat"><span class="digits" dir="ltr">24</span><span class="unit">م³</span></div>
-      <p class="s3-sub">حمولة أكبر في كل نقلة — رمال وبحص ومواد ردم بجدولة يومية دقيقة.</p>
-    </div>
-
-    <div class="ch ch3">
-      <span class="k">حجم الأسطول</span>
-      <div class="stat"><span class="digits digits--txt">حسب الطلب</span></div>
-      <p class="s3-sub">نورّد العدد الذي يحتاجه مشروعك مهما كان حجمه — على دفعات مجدولة وقابلة للزيادة في أي وقت.</p>
-    </div>
-
-    <div class="ch ch4">
-      <span class="k">جاهزون للتحميل؟</span>
-      <h3 class="s3-title">أسطولك القادم يبدأ من هنا</h3>
-      <div class="ch-cta">
-        <a href="#quote" class="btn btn-primary">اطلب عرض سعر</a>
-        <a href="#fleet" class="btn btn-ghost">مواصفات الأسطول</a>
+  <div class="hero-grid" data-depth="4">
+    <div class="shell">
+      <div class="hero-copy">
+        <span class="tag">توريد وتشغيل القوى العاملة</span>
+        <h1>
+          <span class="ln"><span>فريق تشغيل</span></span>
+          <span class="ln"><span>يبدأ العمل</span></span>
+          <span class="ln"><span><em>من أول يوم</em>.</span></span>
+        </h1>
+        <p class="lead">مؤسسة الوثاق الأمثل التجارية توفّر القوى العاملة وفرق التشغيل للمنشآت والمشاريع بعقود مرنة، مع تنظيم الفرق والورديات ومتابعة تشغيلية وفق طبيعة كل موقع.</p>
+        <div class="hero-cta">
+          <a href="#quote" class="btn btn-primary">اطلب فريقك <span class="arw">→</span></a>
+          <a href="#services" class="btn btn-line">استعرض الخدمات</a>
+        </div>
+        <div class="facts">
+          <div class="fact"><span>Service</span><b>تشغيل وإمداد عمالة</b></div>
+          <div class="fact"><span>Team size</span><b>حسب احتياج المشروع</b></div>
+          <div class="fact"><span>Shifts</span><b>ورديات مرنة</b></div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="s3-rail" aria-hidden="true">
-    <span class="s3-fill"></span>
-    <span class="s3-dot on"></span>
-    <span class="s3-dot"></span>
-    <span class="s3-dot"></span>
-    <span class="s3-dot"></span>
-  </div>
-
-  <div class="s3-hint" aria-hidden="true">مرّر للأسفل <span class="arr">↓</span></div>
+  <div class="scroll-cue" aria-hidden="true"><i></i>SCROLL</div>
 </section>
 
-<div class="strip">
-  <div class="wrap">
-    <b>تغطية تشغيلية</b>
-    <div class="chips">
-      <span class="chip">الدمام</span><span class="chip">الجبيل</span><span class="chip">رأس الخير</span>
-      <span class="chip">جدة</span><span class="chip">مكة المكرمة</span><span class="chip">الرياض</span><span class="chip">نيوم</span>
-    </div>
+<!-- ============ marquee ============ -->
+<div class="marq" aria-hidden="true">
+  <div class="marq-track">
+    <span>نظافة المرافق <i>◆</i> عمال مستودعات <i>◆</i> تحميل وتنزيل <i>◆</i> <b>كوادر مساندة</b> <i>◆</i> إشراف مواقع <i>◆</i> عقود تشغيل <i>◆</i> ورديات مرنة <i>◆</i> </span>
+    <span>نظافة المرافق <i>◆</i> عمال مستودعات <i>◆</i> تحميل وتنزيل <i>◆</i> <b>كوادر مساندة</b> <i>◆</i> إشراف مواقع <i>◆</i> عقود تشغيل <i>◆</i> ورديات مرنة <i>◆</i> </span>
   </div>
 </div>
 
-<!-- SERVICES -->
-<section id="services">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="kicker">ما نقدّمه</span>
-      <h2>خدمات الإمداد والتشغيل</h2>
-      <p>كل خدمة لها صفحة مستقلة بتفاصيل المواصفات والتغطية والأسئلة الشائعة.</p>
-    </div>
-    <div class="grid-3">
-      <article class="card rv"><span class="idx">01</span><h3>تأجير قلابات بالشهر</h3><p>قلابات 24 م³ بعقود شهرية أو سنوية، مع أو بدون سائقين، وتوريد دفعات حسب جدول المشروع.</p><a class="more" href="#">تفاصيل الخدمة</a></article>
-      <article class="card rv"><span class="idx">02</span><h3>نقل الرمال ومواد الردم</h3><p>نقل الرمال والبحص ومخلفات الحفر من مواقع التحميل إلى مواقع التفريغ بأحمال يومية مجدولة.</p><a class="more" href="#">تفاصيل الخدمة</a></article>
-      <article class="card rv"><span class="idx">03</span><h3>تشغيل أساطيل بسائقين</h3><p>سائقون معتمدون ورخص سارية ومتابعة تشغيل يومية مع تقارير أداء وساعات عمل.</p><a class="more" href="#">تفاصيل الخدمة</a></article>
-      <article class="card rv"><span class="idx">04</span><h3>نقل المعدات الثقيلة</h3><p>لوبدات وسطحات لنقل الحفارات والشيولات والمعدات بين المواقع مع إدارة التصاريح.</p><a class="more" href="#">تفاصيل الخدمة</a></article>
-      <article class="card rv"><span class="idx">05</span><h3>إمداد مشاريع أرامكو</h3><p>تجهيز المستندات والتأمين والفحص وتصاريح الدخول بما يوافق متطلبات العميل قبل المباشرة.</p><a class="more" href="#">تفاصيل الخدمة</a></article>
-      <article class="card rv"><span class="idx">06</span><h3>عقود التشغيل طويلة الأجل</h3><p>عقود سنوية بأسعار ثابتة وبنود واضحة للصيانة والبدائل والغرامات وحدود المسؤولية.</p><a class="more" href="#">تفاصيل الخدمة</a></article>
-    </div>
-  </div>
-</section>
-
-<!-- FLEET -->
-<section id="fleet" style="background:#fff;border-block:1px solid var(--line)">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="kicker">الأسطول</span>
-      <h2>مواصفات المركبات المتاحة</h2>
-      <p>الأعداد قابلة للزيادة حسب حجم المشروع، والتوريد يتم على دفعات متفق عليها.</p>
-    </div>
-    <div class="fleet rv">
-      <table>
-        <thead><tr><th>المركبة</th><th>السعة</th><th>الموديل</th><th>نمط التعاقد</th><th>المتاح</th></tr></thead>
-        <tbody>
-          <tr><td>شاحنة قلاب</td><td class="n">24 م³</td><td class="n">2025–2026</td><td>إيجار شهري</td><td class="n">حسب الطلب</td></tr>
-          <tr><td>شاحنة قلاب</td><td class="n">18 م³</td><td class="n">2024–2026</td><td>إيجار شهري / يومي</td><td class="n">حسب الطلب</td></tr>
-          <tr><td>لوبد نقل معدات</td><td class="n">60 طن</td><td class="n">2023–2026</td><td>بالرحلة</td><td class="n">حسب الطلب</td></tr>
-          <tr><td>وايت ماء</td><td class="n">20 م³</td><td class="n">2024–2026</td><td>إيجار شهري</td><td class="n">حسب الطلب</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<!-- PROCESS -->
-<section id="process">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="kicker">آلية العمل</span>
-      <h2>من طلب العرض إلى التشغيل في الموقع</h2>
-    </div>
-    <div class="steps">
-      <div class="step rv"><h4>طلب العرض</h4><p>تحدد نوع المواد والكميات وموقع المشروع ومدة التشغيل.</p></div>
-      <div class="step rv"><h4>عرض سعر</h4><p>سعر الشاحنة شهرياً وجدول التوريد وبنود العقد خلال 48 ساعة.</p></div>
-      <div class="step rv"><h4>المستندات</h4><p>الاستمارات والتأمين وخطابات التفويض وتصاريح دخول الموقع.</p></div>
-      <div class="step rv"><h4>التعبئة</h4><p>وصول الشاحنات للموقع، الفحص، والاستلام بمحضر موقّع.</p></div>
-      <div class="step rv"><h4>التشغيل</h4><p>متابعة يومية، صيانة، شاحنة بديلة عند التعطل، وفوترة شهرية.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- PARTNERS BAND -->
-<section id="partners" style="padding-top:0">
-  <div class="wrap">
-    <div class="band rv">
-      <div class="inner">
-        <div>
-          <span class="kicker" style="color:var(--teal)">شركاء الأسطول</span>
-          <h2>عندك قلابات؟ شغّلها معنا بعقود شهرية مضمونة</h2>
-          <p>نستقبل ملاك الشاحنات والمؤسسات لتشغيل مركباتهم ضمن مشاريعنا، بعقود واضحة ودفعات شهرية منتظمة.</p>
+<!-- ============ manifesto ============ -->
+<section class="sec sec--light mani" id="about">
+  <div class="shell">
+    <div class="mani-grid">
+      <div class="mani-side"><span class="tag tag--ink">من نحن</span></div>
+      <div>
+        <p class="mani-txt" id="maniTxt">نحن نرتّب القوى العاملة التي يقوم عليها تشغيل المنشآت — نحدد <em>الاحتياج</em> بدقة، ونجهّز الفريق المناسب بالعدد والوردية الصحيحة، ثم نتابع العمل يوماً بيوم حتى يصبح <em>التشغيل</em> شيئاً لا تفكر فيه.</p>
+        <div class="mani-meta">
+          <div><b>احتياج واضح</b><span>نبدأ من طبيعة الموقع وساعات العمل، لا من قائمة جاهزة.</span></div>
+          <div><b>فريق مرتّب</b><span>عدد ووردية وتوزيع مهام متفق عليه قبل المباشرة.</span></div>
+          <div><b>متابعة مستمرة</b><span>تنسيق دائم مع مسؤول المشروع طوال مدة العقد.</span></div>
         </div>
-        <div style="display:flex;gap:.9rem;flex-wrap:wrap">
-          <a href="#quote" class="btn btn-primary">سجّل أسطولك</a>
-          <a href="#quote" class="btn btn-ghost">شروط التعاقد</a>
+        <div class="mani-shot rv">
+          <img src="assets/workers/staff-lineup.png" alt="كوادر من تخصصات مختلفة: نظافة، مستودعات، إشراف مواقع وكوادر مساندة" width="1200" height="900" loading="lazy" decoding="async">
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- QUOTE -->
-<section id="quote" style="background:#fff;border-top:1px solid var(--line)">
-  <div class="wrap">
-    <div class="grid-2" style="gap:3rem;align-items:start">
-      <div class="rv">
-        <span class="kicker">تواصل معنا</span>
-        <h2 style="font-size:clamp(1.6rem,3vw,2.3rem)">اطلب عرض سعر لمشروعك</h2>
-        <p style="color:var(--ink-soft);margin-top:.9rem">أرسل تفاصيل المشروع ويصلك عرض سعر مفصّل خلال يومي عمل.</p>
-        <ul class="contact-list" style="margin-top:1.5rem">
-          <li><span class="dot">☎</span><div><span>الهاتف</span><b class="num">+966557078010</b></div></li>
-          <li><span class="dot">✉</span><div><span>البريد الإلكتروني</span><b>rekazlogistic@gmail.com</b></div></li>
-          <li><span class="dot">⚑</span><div><span>المقر</span><b>مكة — المملكة العربية السعودية</b></div></li>
-          <li><span class="dot">⏱</span><div><span>أوقات العمل</span><b>الأحد – الخميس · 8 ص – 5 م</b></div></li>
-        </ul>
+<!-- ============ services · horizontal scroll ============ -->
+<section class="hsec" id="services">
+  <div class="hsec-head">
+    <div class="shell">
+      <div class="eyeline">
+        <h2>خدمات تشغيل تُبنى حول احتياج الموقع</h2>
+        <p class="side">ستّ خطوط خدمة تُركّب معاً حسب المشروع — من فريق نظافة يومي إلى عقد تشغيل متكامل.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="hviewport">
+    <div class="htrack" id="htrack">
+      <article class="hpanel">
+        <span class="no lat">01</span>
+        <div><h3>تشغيل عمال النظافة</h3><p>فرق نظافة للمرافق والمكاتب والمواقع وفق ساعات العمل والورديات المطلوبة.</p><div class="hl"></div></div>
+      </article>
+      <article class="hpanel">
+        <span class="no lat">02</span>
+        <div><h3>عمال تشغيل للمواقع</h3><p>كوادر مساندة للأعمال التشغيلية اليومية داخل المواقع والمشاريع.</p><div class="hl"></div></div>
+      </article>
+      <article class="hpanel">
+        <span class="no lat">03</span>
+        <div><h3>عمال مستودعات</h3><p>عمالة للفرز والترتيب والمناولة وتجهيز الطلبات داخل المستودعات.</p><div class="hl"></div></div>
+      </article>
+      <article class="hpanel">
+        <span class="no lat">04</span>
+        <div><h3>تحميل وتنزيل</h3><p>فرق مساندة لعمليات التحميل والتنزيل ونقل المواد داخل مواقع العمل.</p><div class="hl"></div></div>
+      </article>
+      <article class="hpanel">
+        <span class="no lat">05</span>
+        <div><h3>مشرفو مواقع</h3><p>تنسيق فرق العمل ومتابعة الحضور والمهام وسير التشغيل داخل الموقع.</p><div class="hl"></div></div>
+      </article>
+      <article class="hpanel">
+        <span class="no lat">06</span>
+        <div><h3>عقود تشغيل طويلة الأجل</h3><p>حلول تشغيل للقوى العاملة حسب مدة المشروع وحجم الفريق المطلوب.</p><div class="hl"></div></div>
+      </article>
+    </div>
+  </div>
+  <div class="hprog" aria-hidden="true"><i id="hfill"></i></div>
+</section>
+
+<!-- ============ journey · pinned 4-scene ============ -->
+<section class="jrn" id="journey" aria-labelledby="jrnH">
+  <h2 id="jrnH" class="vh">كيف يعمل فريق التشغيل في موقعك</h2>
+  <div class="j-steps" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
+  <span class="j-num lat" id="jNum" aria-hidden="true">01</span>
+
+  <div class="j-stage" aria-hidden="true">
+    <div class="fig fig-team"><span class="fig-glow"></span><img src="assets/workers/cleaner-team.png" alt="" width="1672" height="941" loading="lazy" decoding="async"></div>
+    <div class="fig fig-mop"><span class="fig-glow"></span><img src="assets/workers/cleaner-mop.png" alt="" width="1086" height="1448" loading="lazy" decoding="async"></div>
+    <div class="fig fig-female"><span class="fig-glow"></span><img src="assets/workers/cleaner-female.png" alt="" width="1086" height="1448" loading="lazy" decoding="async"></div>
+    <div class="fig fig-duo"><span class="fig-glow"></span><img src="assets/workers/cleaner-duo.png" alt="" width="1448" height="1086" loading="lazy" decoding="async"></div>
+  </div>
+
+  <div class="j-ui">
+    <div class="jc jc1 jc-a">
+      <span class="idx lat" dir="ltr">01 / 04</span>
+      <h3 class="j-t">فريق كامل يدخل الموقع</h3>
+      <p class="j-p">فرق تشغيل ونظافة جاهزة للمواقع والمنشآت، بعقود مرنة وإدارة واضحة من أول يوم.</p>
+    </div>
+    <div class="jc jc2 jc-a">
+      <span class="idx lat" dir="ltr">02 / 04</span>
+      <h3 class="j-t">العدد الذي يحتاجه مشروعك</h3>
+      <p class="j-p">حدد العدد وطبيعة العمل والوردية، ونرتّب فريق التشغيل المناسب للموقع.</p>
+    </div>
+    <div class="jc jc3 jc-b">
+      <span class="idx lat" dir="ltr">03 / 04</span>
+      <h3 class="j-t">إشراف ومتابعة تشغيلية</h3>
+      <p class="j-p">متابعة يومية للمواقع وتنسيق الفرق وساعات العمل وفق متطلبات كل مشروع.</p>
+    </div>
+    <div class="jc jc4 jc-a">
+      <span class="idx lat" dir="ltr">04 / 04</span>
+      <h3 class="j-t">فريق التشغيل القادم يبدأ من هنا</h3>
+      <p class="j-p">أرسل نوع العمل والعدد والموقع والمدة، ويصلك تصور تشغيل وعرض واضح.</p>
+      <div class="jcta">
+        <a href="#quote" class="btn btn-primary">اطلب فريقك <span class="arw">→</span></a>
+        <a href="#workforce" class="btn btn-line">الكوادر المتاحة</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ workforce · sticky split ============ -->
+<section class="sec" id="workforce">
+  <div class="shell">
+    <div class="eyeline">
+      <h2>الكوادر المتاحة للتشغيل</h2>
+      <p class="side">يتم تحديد العدد ونوع العمالة ونظام الورديات وفق متطلبات كل مشروع.</p>
+    </div>
+
+    <div class="wf-grid">
+      <div class="wf-visual">
+        <div class="wf-frame">
+          <img class="wf-img on" data-i="0" src="assets/workers/staff-cleaning.png" alt="عامل نظافة بزي موحد يحمل أدوات تنظيف" width="645" height="860" loading="lazy" decoding="async">
+          <img class="wf-img"    data-i="1" src="assets/workers/staff-warehouse.png" alt="عامل مستودعات ينقل صناديق على عربة يدوية" width="645" height="860" loading="lazy" decoding="async">
+          <img class="wf-img"    data-i="2" src="assets/workers/staff-hospitality.png" alt="كادر تشغيل ومساندة بزي موحد" width="645" height="860" loading="lazy" decoding="async">
+          <img class="wf-img"    data-i="3" src="assets/workers/staff-supervisor.png" alt="مشرف موقع بخوذة وسترة عاكسة يحمل مخططات" width="645" height="860" loading="lazy" decoding="async">
+        </div>
+        <div class="wf-count"><b id="wfNum">01</b><span class="of" dir="ltr">/ 04</span><span>فئات التشغيل</span></div>
       </div>
 
-      <form class="quote rv" id="quoteForm">
-        <div class="two">
-          <div class="field"><label for="n">الاسم</label><input id="n" name="name" required></div>
-          <div class="field"><label for="c">الشركة</label><input id="c" name="company"></div>
-        </div>
-        <div class="two">
-          <div class="field"><label for="p">رقم الجوال</label><input id="p" name="phone" type="tel" inputmode="tel" required></div>
-          <div class="field"><label for="e">البريد الإلكتروني</label><input id="e" name="email" type="email"></div>
-        </div>
-        <div class="two">
-          <div class="field"><label for="s">الخدمة المطلوبة</label>
-            <select id="s" name="service"><option>تأجير قلابات بالشهر</option><option>نقل رمال ومواد ردم</option><option>تشغيل أسطول بسائقين</option><option>نقل معدات ثقيلة</option><option>تسجيل أسطول كشريك</option></select>
+      <ol class="wf-list" id="wfList">
+        <li class="wf-row on" data-i="0">
+          <span class="no lat">01</span>
+          <div>
+            <h3>عمال نظافة</h3>
+            <p>تنظيف وتشغيل المرافق والمكاتب والمواقع، بخطة يومية وورديات متفق عليها.</p>
+            <div class="chips"><span>ورديات</span><span>مرافق ومكاتب</span><span>حسب المشروع</span></div>
           </div>
-          <div class="field"><label for="q">عدد الشاحنات</label><input id="q" name="trucks" type="number" min="1" placeholder="مثال: 20"></div>
+        </li>
+        <li class="wf-row" data-i="1">
+          <span class="no lat">02</span>
+          <div>
+            <h3>عمال مستودعات ومناولة</h3>
+            <p>فرز وترتيب ومناولة وتجهيز طلبات، وأعمال التحميل والتنزيل داخل المواقع.</p>
+            <div class="chips"><span>مستودعات</span><span>تحميل وتنزيل</span><span>حسب خطة التشغيل</span></div>
+          </div>
+        </li>
+        <li class="wf-row" data-i="2">
+          <span class="no lat">03</span>
+          <div>
+            <h3>كوادر تشغيل ومساندة</h3>
+            <p>كوادر مساندة للأعمال التشغيلية اليومية في المرافق والمجمعات والمشاريع.</p>
+            <div class="chips"><span>مساندة تشغيل</span><span>مرافق ومجمعات</span><span>حسب المشروع</span></div>
+          </div>
+        </li>
+        <li class="wf-row" data-i="3">
+          <span class="no lat">04</span>
+          <div>
+            <h3>مشرفو مواقع</h3>
+            <p>إدارة الفريق ومتابعة الحضور والمهام وسير التشغيل والتنسيق مع مسؤول المشروع.</p>
+            <div class="chips"><span>إشراف</span><span>متابعة يومية</span><span>تقارير تشغيل</span></div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ process · drawn timeline ============ -->
+<section class="sec" id="process" style="background:var(--void)">
+  <div class="shell">
+    <div class="eyeline">
+      <h2>من تحديد الاحتياج إلى التشغيل في الموقع</h2>
+      <p class="side">مسار واضح من أول مكالمة حتى مباشرة الفريق ومتابعته.</p>
+    </div>
+
+    <div class="tl" id="tl">
+      <div class="tl-line" aria-hidden="true"><i id="tlFill"></i></div>
+      <div class="tl-item"><div class="st"><i>STEP 01</i><h3>تحديد الاحتياج</h3></div><p>نحدد نوع العمالة والعدد والموقع وساعات التشغيل وطبيعة المهام المطلوبة.</p></div>
+      <div class="tl-item"><div class="st"><i>STEP 02</i><h3>عرض الحل</h3></div><p>نجهّز تصور التشغيل وعرض السعر حسب متطلبات المشروع ومدته.</p></div>
+      <div class="tl-item"><div class="st"><i>STEP 03</i><h3>تجهيز الفريق</h3></div><p>ترتيب القوى العاملة وخطة المباشرة وتوزيع المهام وفق الاحتياج المتفق عليه.</p></div>
+      <div class="tl-item"><div class="st"><i>STEP 04</i><h3>بدء التشغيل</h3></div><p>مباشرة الفريق في الموقع وتنظيم الورديات وضبط سير العمل اليومي.</p></div>
+      <div class="tl-item"><div class="st"><i>STEP 05</i><h3>المتابعة</h3></div><p>متابعة التشغيل والتنسيق المستمر مع مسؤول المشروع طوال مدة العقد.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="sec" id="faq">
+  <div class="shell">
+    <div class="eyeline">
+      <h2>أسئلة شائعة عن توريد وتشغيل العمالة</h2>
+      <p class="side">إجابات سريعة عن العدد والورديات ومدة العقد وطريقة الطلب.</p>
+    </div>
+
+    <div class="faq">
+      <details open>
+        <summary><span class="q">ما الخدمات التي تقدمها مؤسسة الوثاق الأمثل التجارية؟</span><span class="pm" aria-hidden="true"></span></summary>
+        <p class="a">نوفّر القوى العاملة وفرق التشغيل للمنشآت والمشاريع: عمال نظافة للمرافق والمكاتب، عمال مستودعات للفرز والمناولة وتجهيز الطلبات، فرق تحميل وتنزيل، كوادر تشغيل ومساندة، ومشرفو مواقع لإدارة الفرق ومتابعة سير العمل.</p>
+      </details>
+      <details>
+        <summary><span class="q">كم عدد العمال الذي يمكن توفيره؟</span><span class="pm" aria-hidden="true"></span></summary>
+        <p class="a">يُحدَّد العدد حسب احتياج كل مشروع. أرسل لنا نوع العمل والعدد المطلوب وموقع المشروع ومدته ونظام الورديات، ونرتّب لك تصوّر التشغيل المناسب ضمن عرض واضح.</p>
+      </details>
+      <details>
+        <summary><span class="q">ما نظام الورديات وساعات العمل؟</span><span class="pm" aria-hidden="true"></span></summary>
+        <p class="a">نظام الورديات مرن ويُبنى على طبيعة الموقع وساعات تشغيله. يتم الاتفاق على الوردية وتوزيع المهام قبل مباشرة الفريق.</p>
+      </details>
+      <details>
+        <summary><span class="q">ما مدة العقد؟ وهل توجد عقود قصيرة؟</span><span class="pm" aria-hidden="true"></span></summary>
+        <p class="a">نمط التعاقد مرن حسب المشروع، ويشمل التشغيل قصير المدى وعقود التشغيل طويلة الأجل المرتبطة بمدة المشروع وحجم الفريق المطلوب.</p>
+      </details>
+      <details>
+        <summary><span class="q">ما القطاعات التي تخدمونها؟</span><span class="pm" aria-hidden="true"></span></summary>
+        <p class="a">نخدم المشاريع والمكاتب والمجمعات والمستودعات والمصانع والمرافق وقطاع الضيافة داخل المملكة العربية السعودية.</p>
+      </details>
+      <details>
+        <summary><span class="q">كيف أطلب فريق عمل؟ وكم يستغرق الرد؟</span><span class="pm" aria-hidden="true"></span></summary>
+        <p class="a">عبّئ نموذج <a href="#quote">«اطلب فريقك»</a> في الموقع، أو تواصل عبر الجوال <a href="tel:+966555894558" dir="ltr">0555894558</a> أو <a href="https://wa.me/966555894558">واتساب</a> أو البريد <a href="mailto:alwethaq.alamthal@gmail.com">alwethaq.alamthal@gmail.com</a>. يصلك تصوّر التشغيل وعرض السعر خلال يومي عمل.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="sec cta">
+  <div class="shell" style="position:relative;z-index:2">
+    <span class="tag" style="justify-content:center">حل تشغيل مرن</span>
+    <h2 class="rv" style="margin-top:1.2rem">مشروعك يحتاج فريقاً أكبر؟ نحن نرتّب القوى العاملة.</h2>
+    <p class="rv">أرسل لنا نوع العمل والعدد والموقع ومدة المشروع، وسنرتّب احتياجك التشغيلي ضمن عرض واضح.</p>
+    <div class="row rv">
+      <a href="#quote" class="btn btn-primary">اطلب فريقك <span class="arw">→</span></a>
+      <a href="https://wa.me/966555894558" class="btn btn-line">راسلنا على واتساب</a>
+    </div>
+  </div>
+  <span class="cta-ghost" aria-hidden="true">الوثاق الأمثل</span>
+</section>
+
+<!-- ============ quote ============ -->
+<section class="sec sec--light" id="quote">
+  <div class="shell">
+    <div class="eyeline">
+      <h2>اطلب فريقك</h2>
+      <p class="side">أرسل تفاصيل المشروع ويصلك تصوّر التشغيل وعرض السعر خلال يومي عمل.</p>
+    </div>
+
+    <div class="q-grid">
+      <div class="q-contact">
+        <a href="tel:+966555894558"><span>Phone</span><b class="lat" dir="ltr">+966 55 589 4558</b></a>
+        <a href="mailto:alwethaq.alamthal@gmail.com"><span>Email</span><b>alwethaq.alamthal@gmail.com</b></a>
+        <div><span>Commercial reg.</span><b class="lat" dir="ltr">7055197052</b></div>
+        <div><span>Hours</span><b>الأحد – الخميس · 8 ص – 5 م</b></div>
+      </div>
+
+      <form class="qf" id="quoteForm">
+        <div class="fld"><label for="n">الاسم</label><input id="n" name="name" required autocomplete="name"></div>
+        <div class="fld"><label for="c">الشركة / الجهة</label><input id="c" name="company" autocomplete="organization"></div>
+        <div class="fld"><label for="p">رقم الجوال</label><input id="p" name="phone" type="tel" inputmode="tel" required autocomplete="tel" placeholder="05xxxxxxxx"></div>
+        <div class="fld"><label for="e">البريد الإلكتروني</label><input id="e" name="email" type="email" autocomplete="email"></div>
+        <div class="fld"><label for="s">الخدمة المطلوبة</label>
+          <select id="s" name="service">
+            <option>تشغيل عمال النظافة</option>
+            <option>عمال تشغيل للمواقع</option>
+            <option>عمال مستودعات</option>
+            <option>تحميل وتنزيل</option>
+            <option>مشرفو مواقع</option>
+            <option>عقد تشغيل متكامل</option>
+          </select>
         </div>
-        <div class="field"><label for="l">موقع المشروع ومدته</label><textarea id="l" name="location" rows="3" placeholder="الدمام — 6 أشهر"></textarea></div>
-        <button type="submit" class="btn btn-dark" id="quoteSubmit" style="width:100%;justify-content:center">إرسال الطلب</button>
-        <p id="ok" hidden style="margin:1rem 0 0;color:var(--teal-deep);font-weight:600;font-size:.9rem">تم استلام طلبك — سنتواصل معك قريباً.</p>
-        <p id="err" hidden style="margin:1rem 0 0;color:#B3261E;font-weight:600;font-size:.9rem">تعذّر إرسال الطلب — حاول مرة أخرى أو تواصل معنا عبر واتساب.</p>
+        <div class="fld"><label for="q">عدد العمال المطلوب</label><input id="q" name="workers" type="number" min="1" placeholder="مثال: 20"></div>
+        <div class="fld fld--full"><label for="l">موقع المشروع، المدة والوردية</label>
+          <textarea id="l" name="project_details" rows="3" placeholder="مثال: الرياض — 6 أشهر — وردية صباحية"></textarea></div>
+        <div class="submit">
+          <button type="submit" class="btn btn-ink" id="quoteSubmit">إرسال الطلب <span class="arw">→</span></button>
+          <span class="note">أو تواصل مباشرة على <a href="https://wa.me/966555894558" style="color:var(--teal-deep);font-weight:700">واتساب</a></span>
+        </div>
+        <p id="ok" hidden>تم استلام طلبك — سنتواصل معك قريباً.</p>
+        <p id="err" hidden>تعذّر إرسال الطلب — حاول مرة أخرى أو تواصل معنا عبر واتساب.</p>
       </form>
     </div>
   </div>
@@ -481,87 +961,119 @@ html.gsap .rv{opacity:1;transform:none;transition:none}
 
 </main>
 
-<div class="hazard"></div>
-<footer>
-  <div class="wrap">
-    <div class="f-grid">
+<footer class="ft">
+  <div class="shell">
+    <div class="ft-word" aria-hidden="true">الوثاق الأمثل</div>
+    <div class="ft-grid">
       <div>
-        <div class="brand" style="margin-bottom:1rem">
-          <img class="logo-img" src="assets/rekaz-logo.png" alt="شعار ركاز">
-          <span><b style="color:#fff">ركاز للإمداد والخدمات اللوجستية</b><small>REKAZ LOGISTICS · LLC</small></span>
-        </div>
-        <p style="max-width:34ch">تأجير وتشغيل أساطيل الشاحنات القلابة وخدمات النقل للمشاريع الصناعية والإنشائية في المملكة.</p>
+        <h5>Al·Wethaq Al·Amthal</h5>
+        <p style="max-width:34ch;color:var(--fg-dim)">مؤسسة الوثاق الأمثل التجارية — توريد وتشغيل القوى العاملة للمنشآت والمشاريع في المملكة العربية السعودية.</p>
       </div>
-      <div><h5>الخدمات</h5><ul>
-        <li><a href="#services">تأجير قلابات بالشهر</a></li>
-        <li><a href="#services">نقل الرمال ومواد الردم</a></li>
-        <li><a href="#services">تشغيل أساطيل بسائقين</a></li>
-        <li><a href="#services">نقل المعدات الثقيلة</a></li>
-      </ul></div>
-      <div><h5>الشركة</h5><ul>
-        <li><a href="#">من نحن</a></li>
-        <li><a href="#fleet">الأسطول</a></li>
-        <li><a href="#partners">شركاء الأسطول</a></li>
-        <li><a href="#quote">تواصل معنا</a></li>
-      </ul></div>
-      <div><h5>تواصل</h5><ul>
-        <li><a href="tel:+966557078010" class="num">+966557078010</a></li>
-        <li><a href="mailto:rekazlogistic@gmail.com">rekazlogistic@gmail.com</a></li>
-        <li>مكة  — السعودية</li>
-      </ul></div>
+      <div>
+        <h5>Sections</h5>
+        <ul>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#services">الخدمات</a></li>
+          <li><a href="#workforce">الكوادر</a></li>
+          <li><a href="#process">كيف نعمل</a></li>
+          <li><a href="#faq">أسئلة شائعة</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a class="ft-big lat" dir="ltr" href="tel:+966555894558">+966 55 589 4558</a></li>
+          <li><a href="mailto:alwethaq.alamthal@gmail.com">alwethaq.alamthal@gmail.com</a></li>
+          <li><a href="https://wa.me/966555894558">واتساب</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="f-bottom">
-      <span>© 2026 ركاز للإمداد والخدمات اللوجستية — جميع الحقوق محفوظة</span>
-      <span><a href="#">الشروط والأحكام</a> · <a href="#">سياسة الخصوصية</a></span>
+    <div class="ft-bottom">
+      <span>© 2026 مؤسسة الوثاق الأمثل التجارية — جميع الحقوق محفوظة</span>
+      <span class="lat">CR 7055197052</span>
     </div>
   </div>
 </footer>
 
-<a class="wa" href="https://wa.me/966557078010" aria-label="تواصل عبر واتساب">✆</a>
+<a class="wa" href="https://wa.me/966555894558" aria-label="تواصل عبر واتساب">✆ <span>واتساب</span></a>
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
 
 <script>
-/* nav toggle + graceful degradation when the CDN is unreachable */
+/* ---- SEO: heal the placeholder domain from the real origin ---- */
 (function(){
-  var t=document.getElementById('toggle'), m=document.getElementById('menu');
-  t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o)});
-  m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('open');t.setAttribute('aria-expanded',false)}});
+  var PH='https://REPLACE-WITH-YOUR-DOMAIN.com';
+  if(location.protocol==='file:') return;
+  var base=(location.origin+location.pathname.replace(/[^\/]*$/,'')).replace(/\/$/,'');
+  function fix(v){return v.indexOf(PH)===0 ? base+v.slice(PH.length) : v}
+  var c=document.getElementById('canonical'); if(c) c.href=fix(c.href.split('#')[0]);
+  ['ogurl','ogimg','twimg'].forEach(function(id){
+    var m=document.getElementById(id); if(m) m.setAttribute('content',fix(m.getAttribute('content')));
+  });
+  var ld=document.querySelector('script[type="application/ld+json"]');
+  if(ld && ld.textContent.indexOf(PH)>-1) ld.textContent=ld.textContent.split(PH).join(base);
+})();
+
+/* ---- always-on: menu, form, top bar, asset warm-up, no-GSAP reveal ---- */
+(function(){
+  var burger=document.getElementById('burger'), sheet=document.getElementById('sheet'), bar=document.getElementById('topbar');
+
+  function closeSheet(){sheet.classList.remove('open');burger.setAttribute('aria-expanded','false');document.body.style.overflow=''}
+  burger.addEventListener('click',function(){
+    var open=!sheet.classList.contains('open');
+    sheet.classList.toggle('open',open);
+    burger.setAttribute('aria-expanded',String(open));
+    document.body.style.overflow=open?'hidden':'';
+  });
+  sheet.addEventListener('click',function(e){if(e.target.tagName==='A')closeSheet()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeSheet()});
+
+  function onScroll(){bar.classList.toggle('solid',window.scrollY>24)}
+  addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  /* warm the pinned-journey art before the visitor reaches it */
+  var warmed=false;
+  function warm(){
+    if(warmed)return; warmed=true;
+    ['cleaner-mop','cleaner-female','cleaner-duo'].forEach(function(n){var i=new Image();i.src='assets/workers/'+n+'.png'});
+  }
+  addEventListener('scroll',warm,{once:true,passive:true});
+  addEventListener('pointerdown',warm,{once:true,passive:true});
 
   /* quote form → Google Sheets (Apps Script Web App — see README.md) */
-  var SHEETS_ENDPOINT='https://script.google.com/macros/s/AKfycbx_WDBVQGZ-ZOo7qzgyRR7tGMcEtXLNJfntYUEOh_FQsZGmkG_nVAmnzp47ii_S8YEY/exec'; // ← ضع هنا رابط النشر من Google Apps Script (ينتهي بـ /exec)
+  var SHEETS_ENDPOINT='https://script.google.com/macros/s/AKfycbx_WDBVQGZ-ZOo7qzgyRR7tGMcEtXLNJfntYUEOh_FQsZGmkG_nVAmnzp47ii_S8YEY/exec'; // ← رابط النشر من Google Apps Script (ينتهي بـ /exec)
   var qf=document.getElementById('quoteForm');
   if(qf) qf.addEventListener('submit',function(e){
     e.preventDefault();
     var ok=document.getElementById('ok'), err=document.getElementById('err'), btn=document.getElementById('quoteSubmit');
     ok.hidden=true; err.hidden=true;
-    if(!SHEETS_ENDPOINT){
-      console.warn('SHEETS_ENDPOINT غير مضبوط — راجع README.md لربط النموذج بـ Google Sheets');
-      ok.hidden=false; qf.reset(); return;
-    }
-    btn.disabled=true; var label=btn.textContent; btn.textContent='جارٍ الإرسال…';
+    if(!SHEETS_ENDPOINT){ok.hidden=false;qf.reset();return}
+    btn.disabled=true; var label=btn.innerHTML; btn.textContent='جارٍ الإرسال…';
     fetch(SHEETS_ENDPOINT,{method:'POST',mode:'no-cors',body:new FormData(qf)})
-      .then(function(){ ok.hidden=false; qf.reset(); })
-      .catch(function(){ err.hidden=false; })
-      .finally(function(){ btn.disabled=false; btn.textContent=label; });
+      .then(function(){ok.hidden=false;qf.reset()})
+      .catch(function(){err.hidden=false})
+      .finally(function(){btn.disabled=false;btn.innerHTML=label});
   });
 
+  /* no GSAP → plain reveals, everything stays readable */
   if(!window.gsap){
-    var s=document.getElementById('showcase'); if(s) s.style.display='none';
     var io=new IntersectionObserver(function(es){es.forEach(function(e){
       if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}
     })},{threshold:.12});
-    document.querySelectorAll('.rv').forEach(function(el,i){el.style.transitionDelay=(i%6*60)+'ms';io.observe(el)});
+    document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
   }
 })();
 </script>
 
 <script type="module">
 /* ============================================================
-   REKAZ 3D scroll system — Three.js + GSAP ScrollTrigger + Lenis
-   one rAF loop (gsap.ticker) drives smooth-scroll and rendering
+   الوثاق الأمثل — scroll system
+   techniques: masked line reveal · ghost outlined text · multi-layer
+   parallax · word-by-word scroll lighting · horizontal scroll
+   conversion · pinned scrub timeline · sticky column journey ·
+   drawn timeline · scrollspy rail
    ============================================================ */
 try{
   if(!window.gsap || !window.ScrollTrigger) throw new Error('GSAP unavailable');
@@ -569,15 +1081,16 @@ try{
   document.documentElement.classList.add('gsap');
   document.documentElement.style.scrollBehavior='auto';
 
-  const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const coarse=matchMedia('(pointer: coarse)').matches;
-  const $=(s,c=document)=>c.querySelector(s);
-  const $$=(s,c=document)=>[...c.querySelectorAll(s)];
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const coarse  = matchMedia('(pointer: coarse)').matches;
+  const narrow  = () => matchMedia('(max-width:900px),(max-height:620px)').matches;
+  const $  = (s,c=document)=>c.querySelector(s);
+  const $$ = (s,c=document)=>[...c.querySelectorAll(s)];
 
-  /* Arabic is cursive — split by WORD only; chars are for digits */
-  function splitWords(el){
+  /* Arabic is cursive — split by WORD only, never by character */
+  function splitWords(el,cls='wd'){
     if(!el) return [];
-    const label=el.textContent.trim(), words=[];
+    const label=el.textContent.trim(), out=[];
     (function walk(node){
       [...node.childNodes].forEach(child=>{
         if(child.nodeType===3){
@@ -586,357 +1099,229 @@ try{
             if(!part) return;
             if(/^\s+$/.test(part)){frag.appendChild(document.createTextNode(' '));return}
             const s=document.createElement('span');
-            s.className='w'; s.textContent=part;
-            words.push(s); frag.appendChild(s);
+            s.className=cls; s.textContent=part;
+            if(node.nodeName==='EM') s.classList.add('key');
+            out.push(s); frag.appendChild(s);
           });
           node.replaceChild(frag,child);
         }else if(child.nodeType===1) walk(child);
       });
     })(el);
     el.setAttribute('aria-label',label);
-    return words;
-  }
-  function splitChars(el){
-    if(!el) return [];
-    const label=el.textContent.trim(); el.textContent='';
-    return label.split('').map(ch=>{
-      const s=document.createElement('span');
-      s.className='c'; s.textContent=ch;
-      el.appendChild(s); return s;
-    });
+    return out;
   }
 
-  let lenis=null, tl=null, tick=null, onResize=null;
-  let needsRender=true, active=false;
+  let lenis=null, tick=null;
+  const floats=[];        // every idle loop, for teardown
+  const jFloats=[];       // journey-only loops, paused off-screen
 
-  /* ---------- Lenis smooth inertia scroll ---------- */
+  /* ---------- smooth scroll ---------- */
   if(!reduced && window.Lenis){
-    lenis=new Lenis({duration:1.15,smoothWheel:true,easing:t=>Math.min(1,1.001-Math.pow(2,-10*t))});
+    lenis=new Lenis({duration:1.1,smoothWheel:true,easing:t=>Math.min(1,1.001-Math.pow(2,-10*t))});
     lenis.on('scroll',ScrollTrigger.update);
+    tick=time=>lenis.raf(time*1000);
+    gsap.ticker.add(tick);
+    gsap.ticker.lagSmoothing(0);
   }
-  gsap.ticker.lagSmoothing(0);
-
   $$('a[href^="#"]').forEach(a=>{
     a.addEventListener('click',e=>{
-      if(a.classList.contains('skip-link')) return;  // keep native focus move
+      if(a.classList.contains('skip')) return;
       const id=a.getAttribute('href');
       if(id.length<2 || !lenis) return;
-      const target=document.querySelector(id);
-      if(!target) return;
+      const t=document.querySelector(id);
+      if(!t) return;
       e.preventDefault();
-      lenis.scrollTo(target,{offset:-80});
+      lenis.scrollTo(t,{offset:-90});
     });
   });
-
-  /* ---------- Three.js stage ---------- */
-  const section=$('#showcase'), canvas=$('#s3-canvas');
-  let THREE=null, renderer=null, scene=null, camera=null;
-  let truck=null, bed=null, dust=null, shadowTex=null;
-  const wheels=[], clones=[];
-  const cam={x:11,y:3.4,z:10,tx:.5,ty:1.5,tz:0};
-  const drive={d:0};
-  let applyCam=()=>{};
-
-  try{ THREE=await import('https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js'); }
-  catch(err){ console.warn('three.js CDN unavailable — continuing without WebGL',err); }
-
-  if(THREE){
-    try{
-      const dpr=Math.min(window.devicePixelRatio||1, coarse?1.5:2);
-      renderer=new THREE.WebGLRenderer({canvas,alpha:true,antialias:dpr<2,powerPreference:'high-performance'});
-      renderer.setPixelRatio(dpr);
-      renderer.toneMapping=THREE.ACESFilmicToneMapping;
-      renderer.toneMappingExposure=1.25;
-    }catch(err){ renderer=null; console.warn('WebGL unavailable',err); }
-  }
-  const has3D=!!renderer;
-  if(!has3D) canvas.style.display='none';
-
-  if(has3D){
-    scene=new THREE.Scene();
-    scene.fog=new THREE.Fog(0x101413,16,48);
-    camera=new THREE.PerspectiveCamera(38,1,.1,140);
-
-    scene.add(new THREE.HemisphereLight(0xA8C4BB,0x0E1513,1.15));
-    const key=new THREE.DirectionalLight(0xFFF1DC,1.6); key.position.set(7,9,5); scene.add(key);
-    const rim=new THREE.DirectionalLight(0x4CC0A4,.9); rim.position.set(-7,6,-6); scene.add(rim);
-    const fill=new THREE.DirectionalLight(0xDDF2EA,.55); fill.position.set(-6,5,9); scene.add(fill);
-
-    const ground=new THREE.Mesh(new THREE.CircleGeometry(60,48),
-      new THREE.MeshStandardMaterial({color:0x121815,roughness:1}));
-    ground.rotation.x=-Math.PI/2; scene.add(ground);
-    const grid=new THREE.GridHelper(80,40,0x2C4A42,0x1B2E29);
-    grid.material.transparent=true; grid.material.opacity=.3;
-    grid.position.y=.01; scene.add(grid);
-
-    /* shared materials — brand teal gradient palette */
-    const M={
-      body:new THREE.MeshStandardMaterial({color:0x1E9B85,roughness:.5,metalness:.2,flatShading:true}),
-      deep:new THREE.MeshStandardMaterial({color:0x0D4F45,roughness:.55,metalness:.25,flatShading:true}),
-      mint:new THREE.MeshStandardMaterial({color:0x4CC0A4,roughness:.5,metalness:.2,flatShading:true}),
-      dark:new THREE.MeshStandardMaterial({color:0x18201E,roughness:.85,flatShading:true}),
-      glass:new THREE.MeshStandardMaterial({color:0x0E1513,roughness:.2,metalness:.6}),
-      tire:new THREE.MeshStandardMaterial({color:0x161B19,roughness:.95}),
-      hub:new THREE.MeshStandardMaterial({color:0x9FB5AD,roughness:.35,metalness:.6}),
-      lamp:new THREE.MeshStandardMaterial({color:0xFFE9B8,emissive:0xF2C46B,emissiveIntensity:1.2})
-    };
-    const box=(w,h,d,mat,x,y,z,parent)=>{
-      const m=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),mat);
-      m.position.set(x,y,z); parent.add(m); return m;
-    };
-
-    const sc=document.createElement('canvas'); sc.width=sc.height=128;
-    const sx=sc.getContext('2d');
-    const grad=sx.createRadialGradient(64,64,8,64,64,62);
-    grad.addColorStop(0,'rgba(0,0,0,.42)'); grad.addColorStop(1,'rgba(0,0,0,0)');
-    sx.fillStyle=grad; sx.fillRect(0,0,128,128);
-    shadowTex=new THREE.CanvasTexture(sc);
-
-    /* low-poly dump truck — length on X, cab at +X */
-    truck=new THREE.Group();
-    box(6.4,.18,.16,M.dark,-.3,.82,.45,truck);          // frame rails
-    box(6.4,.18,.16,M.dark,-.3,.82,-.45,truck);
-    box(4.6,.14,2.2,M.dark,-.9,.96,0,truck);            // deck
-
-    const cab=new THREE.Group(); cab.position.x=2.35; truck.add(cab);
-    box(1.7,1.5,2.15,M.body,0,1.85,0,cab);              // cab body
-    box(1.78,.12,2.2,M.deep,0,2.66,0,cab);              // roof
-    box(.06,.62,1.7,M.glass,.89,2.18,0,cab);            // windshield
-    box(.9,.5,.05,M.glass,-.1,2.22,1.09,cab);           // side windows
-    box(.9,.5,.05,M.glass,-.1,2.22,-1.09,cab);
-    box(.1,.5,1.9,M.dark,.9,1.38,0,cab);                // grill
-    box(.28,.34,2.25,M.dark,.92,.76,0,cab);             // bumper
-    box(.08,.16,.3,M.lamp,.94,1.05,.78,cab);            // headlights
-    box(.08,.16,.3,M.lamp,.94,1.05,-.78,cab);
-    const exhaust=new THREE.Mesh(new THREE.CylinderGeometry(.09,.09,1.4,10),M.deep);
-    exhaust.position.set(1.42,2.25,-1.0); truck.add(exhaust);
-
-    bed=new THREE.Group(); bed.position.set(-3.1,1.06,0); truck.add(bed);  // pivot at rear
-    box(4.5,.14,2.3,M.deep,2.25,.07,0,bed);             // floor
-    box(.14,1.15,2.3,M.deep,4.42,.72,0,bed);            // front wall
-    box(4.5,1.05,.12,M.deep,2.25,.66,1.1,bed);          // side walls
-    box(4.5,1.05,.12,M.deep,2.25,.66,-1.1,bed);
-    box(.12,.95,2.26,M.deep,.07,.6,0,bed);              // tail gate
-    [1.1,2.25,3.4].forEach(x=>{                         // mint ribs
-      box(.1,1.05,.16,M.mint,x,.66,1.18,bed);
-      box(.1,1.05,.16,M.mint,x,.66,-1.18,bed);
-    });
-    box(4.5,.08,.14,M.mint,2.25,1.22,1.1,bed);          // top rims
-    box(4.5,.08,.14,M.mint,2.25,1.22,-1.1,bed);
-
-    const wheel=(x,z,w)=>{
-      const gp=new THREE.Group(); gp.position.set(x,.56,z); gp.rotation.x=Math.PI/2;
-      const tire=new THREE.Mesh(new THREE.CylinderGeometry(.56,.56,w,16),M.tire);
-      const hub=new THREE.Mesh(new THREE.CylinderGeometry(.24,.24,w+.04,10),M.hub);
-      tire.add(hub); gp.add(tire); truck.add(gp); wheels.push(tire);
-    };
-    [[2.35,1.05,.4],[2.35,-1.05,.4],[-1.4,1.05,.62],[-1.4,-1.05,.62],[-2.5,1.05,.62],[-2.5,-1.05,.62]]
-      .forEach(([x,z,w])=>wheel(x,z,w));
-
-    const blob=new THREE.Mesh(new THREE.PlaneGeometry(8.4,3.4),
-      new THREE.MeshBasicMaterial({map:shadowTex,transparent:true,depthWrite:false}));
-    blob.rotation.x=-Math.PI/2; blob.position.y=.02; truck.add(blob);
-
-    truck.rotation.y=.55;
-    scene.add(truck);
-
-    /* fleet clones — rise from below ground in chapter 3 */
-    const fleetCount=coarse?4:6;
-    const spots=[[-9,3.6],[-9,-3.6],[-18,3.6],[-18,-3.6],[-27,3.6],[-27,-3.6]];
-    for(let i=0;i<fleetCount;i++){
-      const c=truck.clone(true);
-      c.rotation.y=0;
-      c.position.set(spots[i][0],-4.5,spots[i][1]);
-      c.traverse(o=>{ if(o.isMesh&&o.material===M.tire) wheels.push(o); });
-      scene.add(c); clones.push(c);
-    }
-
-    /* drifting dust */
-    const N=coarse?90:150;
-    const pos=new Float32Array(N*3);
-    for(let i=0;i<N;i++){
-      pos[i*3]=(Math.random()-.5)*55;
-      pos[i*3+1]=Math.random()*7+.3;
-      pos[i*3+2]=(Math.random()-.5)*55;
-    }
-    const dGeo=new THREE.BufferGeometry();
-    dGeo.setAttribute('position',new THREE.BufferAttribute(pos,3));
-    dust=new THREE.Points(dGeo,new THREE.PointsMaterial({color:0x9FD9C8,size:.07,transparent:true,opacity:.45,depthWrite:false}));
-    scene.add(dust);
-
-    applyCam=()=>{camera.position.set(cam.x,cam.y,cam.z);camera.lookAt(cam.tx,cam.ty,cam.tz)};
-    onResize=()=>{
-      const w=section.clientWidth, h=section.clientHeight;
-      camera.aspect=w/h; camera.updateProjectionMatrix();
-      renderer.setSize(w,h,false);
-      needsRender=true;
-      if(reduced){applyCam();renderer.render(scene,camera)}
-    };
-    window.addEventListener('resize',onResize);
-    onResize(); applyCam(); renderer.render(scene,camera);
-  }
-
-  /* ---------- chapter overlays ---------- */
-  const chapters=$$('.scene3d .ch');
-  const [ch1,ch2,ch3,ch4]=chapters;
-  gsap.set(chapters,{autoAlpha:0});
-  const w1h=splitWords($('.s3-title',ch1)), w1p=splitWords($('.s3-sub',ch1));
-  const d2=splitChars($('.digits',ch2)),   w2p=splitWords($('.s3-sub',ch2));
-  const d3=splitWords($('.digits',ch3)),   w3p=splitWords($('.s3-sub',ch3));  // Arabic stat: words, never chars
-  const w4h=splitWords($('.s3-title',ch4));
 
   if(reduced){
-    /* static experience: one rendered frame, first chapter readable */
-    gsap.set(ch1,{autoAlpha:1});
-    const rail=$('.s3-rail'), hint=$('.s3-hint');
-    if(rail) rail.style.display='none';
-    if(hint) hint.style.display='none';
+    /* static, readable: first journey scene composed, nothing pinned */
+    gsap.set('.fig-team',{autoAlpha:1});
+    gsap.set('.jc1',{autoAlpha:1});
+    $('#tlFill').style.transform='scaleY(1)';
+    $$('.tl-item').forEach(i=>i.classList.add('on'));
   }else{
 
-    /* ---------- master pinned scrub timeline (10-unit scale) ---------- */
-    const railFill=$('.s3-fill'), dots=$$('.s3-dot');
-    tl=gsap.timeline({
-      defaults:{ease:'power1.inOut'},
-      scrollTrigger:{
-        trigger:section,
-        start:'top top',
-        end:coarse?'+=300%':'+=400%',
-        pin:true,
-        scrub:1,
-        anticipatePin:1,
-        invalidateOnRefresh:true,
-        onToggle:self=>{active=self.isActive;needsRender=true},
-        onUpdate:self=>{
-          railFill.style.transform=`scaleY(${self.progress})`;
-          const idx=Math.min(3,Math.floor(self.progress*4));
-          dots.forEach((d,i)=>d.classList.toggle('on',i<=idx));
-          needsRender=true;
-        }
-      }
-    });
+  /* ---------- hero: masked line reveal + layered parallax ---------- */
+  gsap.timeline({defaults:{ease:'power3.out'},delay:.12})
+    .from('.hero .tag',{y:16,autoAlpha:0,duration:.5})
+    .from('.hero h1 .ln>span',{yPercent:112,duration:1,stagger:.09},.1)
+    .from('.hero .lead',{y:24,autoAlpha:0,duration:.7},.6)
+    .from('.hero-cta .btn',{y:20,autoAlpha:0,duration:.5,stagger:.1},.75)
+    .from('.fact',{y:20,autoAlpha:0,duration:.5,stagger:.08},.9)
+    .from('.hero-art',{yPercent:12,autoAlpha:0,duration:1.2,ease:'power2.out'},.15)
+    .from('.ghost span',{xPercent:-14,autoAlpha:0,duration:1.1,stagger:.1},.3);
 
-    /* camera + object choreography */
-    if(has3D){
-      tl.to(cam,{x:1.2,y:2.5,z:12.5,tx:0,ty:1.6,duration:2.5},0)
-        .to(truck.rotation,{y:-.18,duration:2.5,ease:'none'},0)
-        .to(cam,{x:-7.6,y:3.3,z:8.4,tx:-1.6,ty:1.9,tz:-2,duration:2.5},2.5)
-        .to(bed.rotation,{z:.52,duration:1.5,ease:'power2.inOut'},2.9)   // bed tips up
-        .to(bed.rotation,{z:0,duration:1.1,ease:'power2.inOut'},5.15)
-        .to(cam,{x:12,y:9.5,z:18.5,tx:-9,ty:.6,tz:0,duration:2.5},5)
-        .to(scene.fog,{near:24,far:80,duration:2},4.8)  // widen fog so the convoy reads
-        .to(truck.rotation,{y:-.5,duration:5,ease:'none'},5)
-        .to(cam,{x:15,y:8.8,z:18,tx:-6,ty:.8,tz:0,duration:2.5},7.5)
-        .to(drive,{d:24,duration:10,ease:'none'},0);                     // wheel spin proxy
-      clones.forEach((c,i)=>tl.to(c.position,{y:0,duration:.8,ease:'power2.out'},5.2+i*.12));
+  if(!coarse){
+    floats.push(gsap.to('.hero-art',{y:-16,duration:5,ease:'sine.inOut',yoyo:true,repeat:-1}));
+  }
+  /* depth parallax on scroll-out */
+  gsap.timeline({scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:.6}})
+    .to('.ghost',{yPercent:-26,ease:'none'},0)          // depth 2 · 0.50x
+    .to('.hero-art',{yPercent:9,ease:'none'},0)         // depth 3 · 0.80x
+    .to('.hero-copy',{yPercent:-14,autoAlpha:.25,ease:'none'},0); // depth 4 · 1.00x
+
+  /* ---------- manifesto: word-by-word scroll lighting ---------- */
+  const maniWords=splitWords($('#maniTxt'));
+  ScrollTrigger.create({
+    trigger:'#maniTxt', start:'top 78%', end:'bottom 58%', scrub:.4,
+    onUpdate:self=>{
+      const lit=Math.round(self.progress*maniWords.length);
+      maniWords.forEach((w,i)=>w.classList.toggle('lit',i<lit));
     }
+  });
 
-    /* chapter 1 — converge from both sides, diverge out */
-    const half=Math.ceil(w1h.length/2);
-    const A=w1h.slice(0,half), B=w1h.slice(half);
-    const k1=$('.k',ch1), k2=$('.k',ch2), k3=$('.k',ch3), k4=$('.k',ch4);
-
-    tl.set(ch1,{autoAlpha:1},0)
-      .fromTo(k1,{y:14,autoAlpha:0},{y:0,autoAlpha:1,duration:.4},.05)
-      .fromTo(A,{x:'55vw',autoAlpha:0},{x:0,autoAlpha:1,duration:.9,ease:'power3.out',stagger:.06},.1)
-      .fromTo(B,{x:'-55vw',autoAlpha:0},{x:0,autoAlpha:1,duration:.9,ease:'power3.out',stagger:-.06},.1)
-      .fromTo(w1p,{y:22,autoAlpha:0},{y:0,autoAlpha:1,duration:.5,stagger:.03},.95)
-      .to(A,{x:'-35vw',autoAlpha:0,duration:.55,ease:'power2.in',stagger:.03},1.85)
-      .to(B,{x:'35vw',autoAlpha:0,duration:.55,ease:'power2.in',stagger:-.03},1.85)
-      .to(w1p,{y:-16,autoAlpha:0,duration:.4,stagger:.015},1.9)
-      .to(k1,{autoAlpha:0,duration:.3},1.9)
-      .set(ch1,{autoAlpha:0},2.55);
-
-    /* chapter 2 — 24 m³, digits letter-by-letter */
-    tl.set(ch2,{autoAlpha:1},2.6)
-      .fromTo(k2,{y:14,autoAlpha:0},{y:0,autoAlpha:1,duration:.35},2.65)
-      .fromTo(d2,{y:90,autoAlpha:0},{y:0,autoAlpha:1,duration:.7,ease:'back.out(1.5)',stagger:.09},2.75)
-      .fromTo($('.unit',ch2),{x:18,autoAlpha:0},{x:0,autoAlpha:1,duration:.4},3.15)
-      .fromTo(w2p,{y:20,autoAlpha:0},{y:0,autoAlpha:1,duration:.5,stagger:.03},3.25)
-      .to(ch2,{autoAlpha:0,y:-30,duration:.5,ease:'power2.in'},4.5)
-      .set(ch2,{y:0},5.05);
-
-    /* chapter 3 — fleet on demand, fleet reveal */
-    tl.set(ch3,{autoAlpha:1},5.15)
-      .fromTo(k3,{y:14,autoAlpha:0},{y:0,autoAlpha:1,duration:.35},5.2)
-      .fromTo(d3,{y:90,autoAlpha:0},{y:0,autoAlpha:1,duration:.7,ease:'back.out(1.5)',stagger:.12},5.3)
-      .fromTo(w3p,{y:20,autoAlpha:0},{y:0,autoAlpha:1,duration:.5,stagger:.03},5.85)
-      .to(ch3,{autoAlpha:0,y:-30,duration:.5,ease:'power2.in'},7.0)
-      .set(ch3,{y:0},7.55);
-
-    /* chapter 4 — CTA, stays on screen */
-    tl.set(ch4,{autoAlpha:1},7.65)
-      .fromTo(k4,{y:14,autoAlpha:0},{y:0,autoAlpha:1,duration:.35},7.7)
-      .fromTo(w4h,{y:36,autoAlpha:0},{y:0,autoAlpha:1,duration:.6,ease:'power3.out',stagger:.06},7.8)
-      .fromTo($$('.ch-cta .btn',ch4),{y:26,skewY:4,autoAlpha:0},{y:0,skewY:0,autoAlpha:1,duration:.5,ease:'back.out(1.7)',stagger:.12},8.7)
-      .to({},{duration:.8},9.2)
-      .to($('.s3-hint'),{autoAlpha:0,duration:.3},.15);
-
-    /* ---------- render loop: one rAF via gsap.ticker ---------- */
-    tick=time=>{
-      if(lenis) lenis.raf(time*1000);
-      if(!has3D) return;
-      if(active||needsRender){
-        truck.position.y=Math.sin(time*1.2)*.04;   // idle breathing
-        dust.rotation.y=time*.02;
-        for(const w of wheels) w.rotation.y=-drive.d;
-        applyCam();
-        renderer.render(scene,camera);
-        needsRender=false;
+  /* ---------- services: horizontal scroll conversion (RTL: travels right) ---------- */
+  const track=$('#htrack'), hsec=$('#services'), hfill=$('#hfill');
+  let hST=null;
+  function buildHorizontal(){
+    if(hST){hST.kill(true);hST=null;gsap.set(track,{clearProps:'transform'})}
+    if(narrow()){ if(hfill) hfill.style.transform='scaleX(1)'; return }
+    const dist=()=>Math.max(0,track.scrollWidth-hsec.clientWidth);
+    hST=gsap.to(track,{
+      x:()=>dist(), ease:'none',
+      scrollTrigger:{
+        trigger:hsec, start:'top top', end:()=>'+='+dist(),
+        pin:true, scrub:1, anticipatePin:1, invalidateOnRefresh:true,
+        onUpdate:self=>{ if(hfill) hfill.style.transform='scaleX('+(.16+self.progress*.84)+')' }
       }
-    };
-    gsap.ticker.add(tick);
+    }).scrollTrigger;
+  }
+  buildHorizontal();
+  let hrt, lastNarrow=narrow();
+  addEventListener('resize',()=>{
+    clearTimeout(hrt);
+    hrt=setTimeout(()=>{
+      if(narrow()!==lastNarrow){ lastNarrow=narrow(); buildHorizontal(); }
+      ScrollTrigger.refresh();
+    },250);
+  });
 
-    /* ---------- page-wide GSAP layer ---------- */
-    const heroWords=splitWords($('.hero h1'));
-    gsap.timeline({delay:.1,defaults:{ease:'power3.out'}})
-      .from('.hero .eyebrow',{y:20,autoAlpha:0,duration:.5})
-      .from(heroWords,{y:40,autoAlpha:0,duration:.8,stagger:.05},.15)
-      .from('.hero .lead',{y:26,autoAlpha:0,duration:.6},.55)
-      .from('.hero .hero-cta .btn',{y:22,autoAlpha:0,duration:.5,stagger:.1},.7)
-      .from('.plate',{x:-60,autoAlpha:0,duration:.8},.35);
+  /* ---------- journey: pinned 4-scene scrub ---------- */
+  const jrn=$('#journey');
+  const team=$('.fig-team'), mop=$('.fig-mop'), female=$('.fig-female'), duo=$('.fig-duo');
+  const figs=[team,mop,female,duo];
+  const cards=[$('.jc1'),$('.jc2'),$('.jc3'),$('.jc4')];
+  const glow=el=>$('.fig-glow',el);
+  const jNum=$('#jNum'), jSteps=$$('.j-steps i');
 
-    $$('.cnt').forEach(el=>{
-      const to=parseFloat(el.dataset.to)||0;
-      const state={v:0}; el.textContent='0';
-      gsap.to(state,{v:to,duration:1.6,ease:'power2.out',
-        onUpdate:()=>{el.textContent=Math.round(state.v)},
-        scrollTrigger:{trigger:el,start:'top 95%',once:true}});
+  gsap.set([team,duo],{xPercent:-50});
+  gsap.set(figs,{autoAlpha:0});
+  gsap.set(cards,{autoAlpha:0});
+  const jTitles=cards.map(c=>splitWords($('.j-t',c),'wd'));
+  gsap.set($$('.jc .wd'),{autoAlpha:0});
+
+  figs.forEach((el,i)=>{
+    const f=gsap.to($('img',el),{y:-13,duration:2.5+i*.3,ease:'sine.inOut',yoyo:true,repeat:-1,paused:true});
+    jFloats.push(f); floats.push(f);
+  });
+
+  const IN  = coarse?56:30;
+  const OUT = coarse?36:20;
+
+  const jtl=gsap.timeline({
+    defaults:{ease:'power2.inOut'},
+    scrollTrigger:{
+      trigger:jrn, start:'top top', end:coarse?'+=280%':'+=420%',
+      pin:true, scrub:1, anticipatePin:1, invalidateOnRefresh:true,
+      onToggle:self=>jrn.classList.toggle('live',self.isActive),
+      onUpdate:self=>{
+        const i=Math.min(3,Math.floor(self.progress*4));
+        jSteps.forEach((s,k)=>s.classList.toggle('on',k<=i));
+        jNum.textContent='0'+(i+1);
+      }
+    }
+  });
+
+  /* scene 1 — the crew arrives */
+  jtl.fromTo(team,{autoAlpha:0,scale:.9,y:70},{autoAlpha:1,scale:1,y:0,duration:1.1,ease:'power3.out'},0)
+     .fromTo(glow(team),{scale:.7,autoAlpha:.2},{scale:1,autoAlpha:1,duration:1.5,ease:'none'},0)
+     .to(team,{autoAlpha:0,scale:.95,y:-40,duration:.7,ease:'power2.in'},2.0);
+  /* scene 2 — one operator steps forward, from the inline-end edge */
+  jtl.fromTo(mop,{autoAlpha:0,x:`-${IN}vw`,rotation:2,scale:.92},{autoAlpha:1,x:0,rotation:0,scale:1,duration:1.25,ease:'power3.out'},2.5)
+     .fromTo(glow(mop),{x:'6vw',scale:.8},{x:'-2vw',scale:1.06,duration:2.3,ease:'none'},2.5)
+     .to(mop,{autoAlpha:0,x:`-${OUT}vw`,scale:.96,duration:.7,ease:'power2.in'},4.6);
+  /* scene 3 — supervision, worker and glow parallax apart */
+  jtl.fromTo(female,{autoAlpha:0,x:`${IN}vw`,rotation:-2,scale:.92},{autoAlpha:1,x:0,rotation:0,scale:1,duration:1.25,ease:'power3.out'},5.05)
+     .fromTo(glow(female),{x:'-6vw',scale:.8},{x:'2vw',scale:1.06,duration:2.3,ease:'none'},5.05)
+     .to(female,{autoAlpha:0,x:`${OUT}vw`,scale:.96,duration:.7,ease:'power2.in'},7.1);
+  /* scene 4 — the pair closes it out and stays */
+  jtl.fromTo(duo,{autoAlpha:0,scale:.92,y:60},{autoAlpha:1,scale:1,y:0,duration:1.15,ease:'power3.out'},7.55)
+     .fromTo(glow(duo),{scale:.75,autoAlpha:.2},{scale:1,autoAlpha:1,duration:1.7,ease:'none'},7.55)
+     .to({},{duration:.4},9.6);   // hold the closing scene before the pin releases
+
+  /* copy cards — theatrical enter, then exit (last one holds) */
+  const JC=[[0,2.5],[2.55,5.0],[5.1,7.5],[7.6,10]];
+  cards.forEach((c,i)=>{
+    const [a,b]=JC[i];
+    jtl.set(c,{autoAlpha:1},a)
+       .fromTo($('.idx',c),{y:14,autoAlpha:0},{y:0,autoAlpha:1,duration:.35},a+.05)
+       .fromTo(jTitles[i],{yPercent:60,autoAlpha:0},{yPercent:0,autoAlpha:1,duration:.6,ease:'power3.out',stagger:.07},a+.12)
+       .fromTo($('.j-p',c),{y:20,autoAlpha:0},{y:0,autoAlpha:1,duration:.45},a+.6);
+    const cta=$('.jcta',c);
+    if(cta) jtl.fromTo($$('.btn',cta),{y:22,autoAlpha:0},{y:0,autoAlpha:1,duration:.45,ease:'back.out(1.6)',stagger:.1},a+.95);
+    if(i<3) jtl.to(c,{autoAlpha:0,y:-26,duration:.45,ease:'power2.in'},b-.45).set(c,{y:0},b);
+  });
+
+  /* run the idle float loops only while the section is on screen */
+  ScrollTrigger.create({trigger:jrn,start:'top bottom',end:'bottom top',
+    onToggle:self=>jFloats.forEach(f=>self.isActive?f.play():f.pause())});
+
+  /* ---------- workforce: sticky column journey ---------- */
+  const rows=$$('.wf-row'), shots=$$('.wf-img'), wfNum=$('#wfNum');
+  function setActive(i){
+    rows.forEach((r,k)=>r.classList.toggle('on',k===i));
+    shots.forEach((s,k)=>s.classList.toggle('on',k===i));
+    if(wfNum) wfNum.textContent='0'+(i+1);
+  }
+  rows.forEach((row,i)=>{
+    ScrollTrigger.create({
+      trigger:row, start:'top 62%', end:'bottom 42%',
+      onEnter:()=>setActive(i), onEnterBack:()=>setActive(i)
     });
+  });
 
-    gsap.set('.rv',{autoAlpha:0,y:42});
-    ScrollTrigger.batch('.rv',{start:'top 88%',once:true,
-      onEnter:els=>gsap.to(els,{y:0,autoAlpha:1,duration:.9,ease:'power3.out',stagger:.08,overwrite:true})});
+  /* ---------- process: line draws, dots light ---------- */
+  gsap.to('#tlFill',{scaleY:1,ease:'none',
+    scrollTrigger:{trigger:'#tl',start:'top 72%',end:'bottom 72%',scrub:.5}});
+  $$('.tl-item').forEach(item=>{
+    ScrollTrigger.create({trigger:item,start:'top 74%',
+      onEnter:()=>item.classList.add('on'),
+      onLeaveBack:()=>item.classList.remove('on')});
+  });
 
-    window.addEventListener('load',()=>ScrollTrigger.refresh());
+  /* ---------- generic reveals ---------- */
+  $$('#workforce .eyeline, #process .eyeline, #quote .eyeline, .mani-meta > div, .q-contact > *').forEach(el=>el.classList.add('rv'));
+  gsap.set('.rv',{autoAlpha:0,y:36});
+  ScrollTrigger.batch('.rv',{start:'top 88%',once:true,
+    onEnter:els=>gsap.to(els,{y:0,autoAlpha:1,duration:.9,ease:'power3.out',stagger:.09,overwrite:true})});
+
+  /* ---------- rail scrollspy ---------- */
+  const dots=$$('.rail-dot');
+  dots.forEach(d=>{
+    const sec=document.querySelector(d.getAttribute('href'));
+    if(!sec) return;
+    const mark=()=>{dots.forEach(x=>x.classList.toggle('on',x===d))};
+    ScrollTrigger.create({trigger:sec,start:'top 45%',end:'bottom 45%',onEnter:mark,onEnterBack:mark});
+  });
+
+  addEventListener('load',()=>ScrollTrigger.refresh());
   }
 
-  /* ---------- cleanup / disposal ---------- */
-  const disposeMaterial=m=>{for(const k in m){const v=m[k];if(v&&v.isTexture)v.dispose()}m.dispose()};
+  /* ---------- cleanup ---------- */
   function destroy(){
     if(tick) gsap.ticker.remove(tick);
+    floats.forEach(f=>f.kill());
     ScrollTrigger.getAll().forEach(t=>t.kill());
-    if(tl) tl.kill();
     if(lenis) lenis.destroy();
-    if(onResize) window.removeEventListener('resize',onResize);
-    if(has3D){
-      scene.traverse(o=>{
-        if(o.geometry) o.geometry.dispose();
-        if(o.material) Array.isArray(o.material)?o.material.forEach(disposeMaterial):disposeMaterial(o.material);
-      });
-      if(shadowTex) shadowTex.dispose();
-      renderer.dispose();
-      if(renderer.forceContextLoss) renderer.forceContextLoss();
-    }
   }
-  window.addEventListener('pagehide',destroy,{once:true});
-  window.rekaz3D={timeline:tl,lenis,destroy,cam,drive,
-    dbg:()=>({camera:camera?camera.position.toArray().map(v=>+v.toFixed(2)):null,active,needsRender})};
+  addEventListener('pagehide',destroy,{once:true});
 
 }catch(err){
-  console.error('Animation system failed — falling back to static page',err);
-  document.querySelectorAll('.rv,.scene3d .ch').forEach(el=>{
-    el.style.opacity=1; el.style.visibility='visible'; el.style.transform='none';
-  });
+  console.error('Animation system failed — falling back to a static page',err);
+  document.querySelectorAll('.rv').forEach(el=>{el.style.opacity=1;el.style.transform='none'});
+  document.querySelectorAll('.fig-team,.jc1').forEach(el=>{el.style.opacity=1;el.style.visibility='visible'});
 }
 </script>
 </body>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- استبدل REPLACE-WITH-YOUR-DOMAIN.com بنطاقك الحقيقي، وحدّث lastmod عند كل تعديل -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://REPLACE-WITH-YOUR-DOMAIN.com/</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://REPLACE-WITH-YOUR-DOMAIN.com/assets/brand/og-cover.png</image:loc>
+      <image:title>مؤسسة الوثاق الأمثل التجارية — توريد وتشغيل القوى العاملة</image:title>
+    </image:image>
+  </url>
+</urlset>

@@ -1,0 +1,7 @@
+# مؤسسة الوثاق الأمثل التجارية
+# ⚠️ ضع نطاقك الحقيقي في سطر Sitemap أدناه
+User-agent: *
+Allow: /
+Disallow: /apps-script/
+
+Sitemap: https://REPLACE-WITH-YOUR-DOMAIN.com/sitemap.xml
